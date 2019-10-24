@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Function | Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md" data-header-fix-moment="500"
+    data-header-fix-effect="slide">
+    <div class="u-header__section">
+      <!-- Topbar -->
+      <div class="container u-header__hide-content pt-2">
+        <div class="d-flex align-items-center justify-content-end">
+          <!-- Jump To -->
+          <div class="d-inline-block d-sm-none position-relative mr-2">
+            <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center"
+              href="javascript:;" role="button" aria-controls="jumpToDropdown" aria-haspopup="true"
+              aria-expanded="false" data-unfold-event="hover" data-unfold-target="#jumpToDropdown"
+              data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300"
+              data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp"
+              data-unfold-animation-out="fadeOut">
+              Jump to
+            </a>
+
+            <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
+              <a class="dropdown-item" href="#">Documentation</a>
+              <a class="dropdown-item" href="#">Contact Us</a>
+            </div>
+          </div>
+          <!-- End Jump To -->
+
+          <!-- Links -->
+          <div class="d-none d-sm-inline-block ml-sm-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-0">
+                <a class="u-header__navbar-link" href="#" target="_blank">Documentation</a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="u-header__navbar-link" href="#" target="_blank">Blog</a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="u-header__navbar-link" href="#" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Links -->
+
+          <ul class="list-inline ml-2 mb-0">
+            <!-- Account Login -->
+            <li class="list-inline-item">
+              <a class="btn btn-xs btn-icon btn-text-secondary" href="https://app.accrete.ai/" target="_blank"
+                role="button">
+                <span class="fas fa-user-circle btn-icon__inner font-size-1"></span>
+              </a>
+            </li>
+            <!-- End Account Login -->
+          </ul>
+        </div>
+      </div>
+      <!-- End Topbar -->
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html"
+            aria-label="Front">
+            <svg height="46" viewBox="0 0 209 46" width="209" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none">
+                <path
+                  d="m74.6918817 33.4387097c-1.780654 2.6116259-4.4367565 3.9174193-7.9683871 3.9174193-3.2051773 0-5.8167641-1.1128921-7.8348387-3.3387096-1.9587195-2.1961401-2.9380645-4.9115968-2.9380645-8.1464517 0-3.2348548.979345-5.9503116 2.9380645-8.1464516 2.0180746-2.2258176 4.7038542-3.3387096 8.0574194-3.3387096 3.3535651 0 5.9354748 1.3206319 7.7458064 3.9619354v-3.6058064h3.3387097v22.2580645h-3.3387097zm-7.5232258.8903226c2.403883 0 4.3032188-.8309595 5.6980645-2.4929033 1.3354906-1.5729111 2.0032258-3.5612783 2.0032258-5.9651613 0-2.4038829-.6677352-4.3922502-2.0032258-5.9651612-1.3948457-1.6619438-3.2941815-2.4929033-5.6980645-2.4929033-2.3742054 0-4.3032184.8309595-5.7870968 2.4929033-1.3948456 1.572911-2.092258 3.5612783-2.092258 5.9651612 0 2.403883.6974124 4.3922502 2.092258 5.9651613 1.4838784 1.6619438 3.4128914 2.4929033 5.7870968 2.4929033zm27.2413979 0c1.4245232 0 2.6858009-.4006412 3.7838709-1.2019355 1.09807-.8012944 1.8993523-1.8399936 2.4038713-3.1161291h3.605806c-.682584 2.1961401-1.929023 3.9619288-3.739355 5.2974194-1.899364 1.3651681-4.1548253 2.0477419-6.7664513 2.0477419-3.2645325 0-5.9206349-1.1128921-7.9683871-3.3387096-1.988397-2.1664625-2.9825806-4.8819192-2.9825806-8.1464517 0-3.2645324.9941836-5.9799891 2.9825806-8.1464516 2.0477522-2.2258176 4.7038546-3.3387096 7.9683871-3.3387096 2.611626 0 4.8670873.6825738 6.7664513 2.0477419 1.810332 1.3354905 3.056771 3.1012793 3.739355 5.2974193h-3.605806c-.504519-1.2761354-1.3058013-2.3148347-2.4038713-3.116129s-2.3593477-1.2019355-3.7838709-1.2019355c-1.4245233 0-2.633866.2225784-3.6280646.667742-.9941985.4451635-1.8325772 1.0535445-2.5151612 1.8251613-1.4542009 1.6025886-2.1812904 3.5909558-2.1812904 5.9651612 0 2.3742055.7270895 4.3625727 2.1812904 5.9651613 1.4838783 1.6619438 3.5315998 2.4929033 6.1432258 2.4929033zm24.5259142 0c1.424523 0 2.685801-.4006412 3.783871-1.2019355 1.09807-.8012944 1.899352-1.8399936 2.403871-3.1161291h3.605806c-.682584 2.1961401-1.929023 3.9619288-3.739355 5.2974194-1.899364 1.3651681-4.154825 2.0477419-6.766451 2.0477419-3.264533 0-5.920635-1.1128921-7.968387-3.3387096-1.988397-2.1664625-2.982581-4.8819192-2.982581-8.1464517 0-3.2645324.994184-5.9799891 2.982581-8.1464516 2.047752-2.2258176 4.703854-3.3387096 7.968387-3.3387096 2.611626 0 4.867087.6825738 6.766451 2.0477419 1.810332 1.3354905 3.056771 3.1012793 3.739355 5.2974193h-3.605806c-.504519-1.2761354-1.305801-2.3148347-2.403871-3.116129s-2.359348-1.2019355-3.783871-1.2019355c-1.424524 0-2.633866.2225784-3.628065.667742-.994198.4451635-1.832577 1.0535445-2.515161 1.8251613-1.454201 1.6025886-2.18129 3.5909558-2.18129 5.9651612 0 2.3742055.727089 4.3625727 2.18129 5.9651613 1.483878 1.6619438 3.5316 2.4929033 6.143226 2.4929033zm25.994946-19.9432258v3.3387096h-.400645c-2.403883 0-4.362573.9645065-5.876129 2.8935484-1.424523 1.8400092-2.136774 4.0361163-2.136774 6.5883871v9.7935484h-3.33871v-22.2580645h3.33871v5.4754839c.712261-2.3148503 2.255472-4.0212849 4.629677-5.1193549.97936-.4748411 2.166445-.712258 3.56129-.712258zm13.263333 19.9432258c2.997435 0 5.149026-1.2464392 6.454839-3.7393549h3.650323c-.771617 2.0180746-1.995798 3.6503164-3.672581 4.8967742-1.676783 1.2464579-3.835793 1.8696774-6.477097 1.8696774-3.353565 0-6.08386-1.1128921-8.190968-3.3387096-2.047752-2.1664625-3.071612-4.8819192-3.071612-8.1464517 0-3.29421.979345-6.0096667 2.938064-8.1464516 2.07743-2.2258176 4.778048-3.3387096 8.101936-3.3387096 3.323887 0 6.024505 1.112892 8.101935 3.3387096 1.958719 2.1367849 2.938065 4.8522416 2.938065 8.1464516v1.3354839h-18.652259c.237421 2.0477522 1.053542 3.7393482 2.448388 5.0748387 1.424523 1.3651681 3.234827 2.047742 5.430967 2.047742zm-.267096-16.9161291c-2.047753 0-3.769026.6380582-5.163871 1.9141936-1.305813 1.2167803-2.107096 2.8045063-2.403871 4.7632258h15.135483c-.296775-1.9587195-1.098058-3.5464455-2.40387-4.7632258-1.394846-1.2761354-3.116119-1.9141936-5.163871-1.9141936zm17.581397 19.5870968v-19.32h-4.540645v-2.9380645h4.540645v-7.96838711h3.33871v7.96838711h5.119355v2.9380645h-5.119355v19.32zm21.899463-2.6709677c2.997434 0 5.149025-1.2464392 6.454838-3.7393549h3.650323c-.771617 2.0180746-1.995798 3.6503164-3.672581 4.8967742-1.676782 1.2464579-3.835793 1.8696774-6.477096 1.8696774-3.353566 0-6.083861-1.1128921-8.190968-3.3387096-2.047752-2.1664625-3.071613-4.8819192-3.071613-8.1464517 0-3.29421.979345-6.0096667 2.938064-8.1464516 2.07743-2.2258176 4.778048-3.3387096 8.101936-3.3387096s6.024506 1.112892 8.101935 3.3387096c1.95872 2.1367849 2.938065 4.8522416 2.938065 8.1464516v1.3354839h-18.652258c.23742 2.0477522 1.053541 3.7393482 2.448387 5.0748387 1.424523 1.3651681 3.234828 2.047742 5.430968 2.047742zm-.267097-16.9161291c-2.047752 0-3.769025.6380582-5.163871 1.9141936-1.305813 1.2167803-2.107095 2.8045063-2.403871 4.7632258h15.135484c-.296776-1.9587195-1.098058-3.5464455-2.403871-4.7632258-1.394846-1.2761354-3.116119-1.9141936-5.163871-1.9141936z"
+                  fill="#1c212b" />
+                <path
+                  d="m37.3626141 11.3301322-6.1072406-3.75200851c-.0023782-.00144363-.0047564-.00192484-.0071346-.00336848s-.0042808-.00336848-.006659-.00481212c-.0014269-.00096242-.0033295-.00144363-.0052321-.00240606l-6.0582495-3.72169219c-.0099884-.0081806-.01855-.01732362-.0294898-.0245418l-6.1077162-3.75200854c-.0023782-.00144363-.0047564-.00192485-.0071347-.00288727-.0023782-.00144363-.0042807-.00384969-.0066589-.00529333-.0166475-.00962424-.0347219-.01347393-.051845-.02069211-.0195013-.00866181-.0380513-.01828605-.0585039-.02406059-.0195014-.00529333-.0394783-.00625575-.0594553-.00866181-.0209282-.00336848-.0418564-.00769939-.0632603-.00769939s-.0418565.00433091-.0632604.00769939c-.0199769.00240606-.0399539.00336848-.0594552.00914302-.019977.00529333-.0390026.01491757-.0585039.02309817-.0171231.00769939-.0351975.01154908-.051845.02117332-.0028539.00144364-.0047564.0038497-.0071346.00529333-.0023782.00144364-.0047564.00144364-.0071347.00288727l-6.1072406 3.75200854c-.0038051.00240606-.006659.00625575-.0099885.00866181l-6.09392261 3.74334672c-.00856156.00529333-.0147449.01251151-.02283081.01876727l-6.08440982 3.73805336c-.1422169.0875806-.22830806.243012-.22830806.4109549 0 .0009624.00047564.0019249.00047564.0033685 0 .0009624-.00047564.0019249-.00047564.0028873v7.504017.0028873 7.5040171 7.5040171c0 .0428278.0057077.0846932.01617182.125115.00332949.0120303.00998848.0235794.01426925.0356097.00998848.0269479.01855003.0538957.03281929.0789187.00713463.0125116.0171231.0230982.02568466.0351285.01522053.0216545.02996543.0437903.0489911.0630388.0114154.011549.02568466.0202109.03805134.0307975.01712311.0139552.03281929.0303164.0523206.0423467l6.0853611 3.7390158c.00808591.0057745.01379362.0125115.02187953.0178048l6.10771631 3.7520085c.0038051.0024061.0085615.0033685.0123666.0057746l6.0915445 3.7419031c.0038051.002406.0080859.0028872.0114154.0052933.0014269.0004812.0023782.0019249.0038051.0028873.0142693.0081806.0294898.0115491.0442347.0178048.0223552.0101055.0437591.0211733.0670655.0279103.0309167.0086618.0632604.0110679.095604.0129927.0085616.0004812.0161718.0033685.025209.0033685.0099885 0 .0180744-.0028873.026636-.0033685.0323436-.0019248.0646872-.0048121.095604-.0129927.0228308-.0062558.0432834-.0173236.0651629-.0269479.0147449-.0067369.0309167-.0101054.0461372-.0187672.001427-.0009624.0023782-.0024061.0042808-.0033685.0033295-.0019249.0076103-.0028873.0104641-.0048121l6.0915445-3.7419031c.0038051-.0024061.0085615-.0033685.0123667-.0057746l6.1072406-3.7520085c.0057077-.0033685.0095128-.0086618.0142692-.0115491l6.094874-3.7447903c.0199769-.0120303.0356731-.0283915.0532719-.0433091.011891-.0101054.0261603-.0187673.0371-.0298351.0175988-.0178049.0309167-.0389782.0456616-.0596703.0099885-.0129927.0209283-.025023.0290142-.0389782.0128423-.0230981.0214039-.0481211.0304411-.0726629.005232-.0139552.0123667-.0269479.0166474-.0413843.0099885-.0404217.0161718-.0822872.0161718-.125115v-7.5044983-7.5040171c0-.0004812 0-.0009624 0-.0014436v-7.5059419c0-.0009625-.0004756-.0019249-.0004756-.0028873 0-.0014436.0004756-.0024061.0004756-.0028873 0-.1684241-.0870424-.3238555-.2287837-.4109549zm-.7224998 16.2832455v5.7933091l-4.7150371-2.8968952zm-30.97426926 2.8964139-4.71503709 2.8968952v-5.7933091zm-3.97493846-12.5687714-.74009863.4547451v-5.7937902l4.71503709 2.8968951zm34.50828772 8.8172441-4.7150371 2.8968951v-5.7937902l4.5380984 2.7881412zm-33.04045715-1.0860951 2.94802783-1.8108v5.793309l-4.71503709-2.8968951zm20.82597595 8.589631-4.7150371 2.8973763v-5.7937903zm-5.6663207 2.8973763-4.7155128-2.8973763 4.7155128-2.8968952zm-10.81942389-21.6603063 4.71170759-2.8949703v5.7894594l-.3800378-.2329065zm22.19534869.2444556-4.3174006 2.6524395v-5.793309l4.7150371 2.8968951zm-5.7096041 11.0101264-4.7150371 2.8973763v-5.7942715l1.4702088.9032346zm-5.6663207 2.8968951-4.7155128-2.8968951 4.7155128-2.8968952zm-4.7155128-10.4009122 4.7155128-2.8968951v5.793309zm-.4375904-.8570382v-5.7894594l4.7121832 2.8949703zm0 7.504017v-5.7899406l4.7117076 2.8949703-1.1986173.7362541zm6.1043868-3.7500837v-5.793309l4.7150371 2.8968951-.950808.5841912zm5.155957-3.7520085-4.7155127-2.8973763 4.7155127-2.896414zm-16.92666449 4.6119341 4.71170759-2.8949703v5.7894593l-3.78991379-2.3285839zm5.66632069 4.6090467 4.7121832 2.8949703-4.7121832 2.8949703zm11.2603438-1.7174449-2.9408932-1.8064692-1.7741439-1.090426 3.1087948-1.9099297 1.6062423-.9869654zm1.3922035-6.6464977 4.7150371-2.8968951v5.7933091zm-7.4994441-4.611934-4.7155128-2.8968951 4.7155128-2.89689518zm-11.26034383 1.7145577 4.71503713 2.8973763-4.71503713 2.8968952zm0 7.5073856 2.98940863 1.8363042 1.7256285 1.0601097-4.71503713 2.8968951zm5.15262753 3.7539333v5.7894594l-4.71170759-2.8949703zm12.2149569 5.7913843-4.7155127-2.8968952 4.7155127-2.8968951zm.9512836-5.7933091 4.7150371 2.8968951-4.7150371 2.8968952zm0-1.710708v-5.7933091l4.7150371 2.8968952-4.5224022 2.7780358zm6.1072406-9.5482049 4.7150371 2.8968951-4.7150371 2.8968952zm-7.0585242-5.4670474-1.6062423-.98696548-3.1092704-1.91041091 4.7155127-2.89689514zm-.4409199.8551134-4.7150371 2.8968951v-5.79330907l3.7642291 2.31270397zm-10.8194239-.8575195v-5.78945937l4.7121832 2.8954515zm-7.05852422 11.2627626-4.71503709-2.8968952 4.71503709-2.8973763zm19.71107152 4.6104904.1769388-.1087539 4.5380983-2.7881412v5.793309zm-18.75978793-17.91407232 4.71503713 2.89689512-4.71503713 2.8973764zm-6.10724062 17.05847772v-5.7933091l4.71503709 2.8968952-.67160621.4123985zm6.10724062 5.4627165 4.71503713 2.8968952-4.71503713 2.8973763zm6.10724063 3.7539334 4.7121832 2.8954515-4.7121832 2.8949703zm11.2584412 5.7899406-4.7117076-2.8949703 4.7117076-2.8954515zm6.1091432-9.543874v5.7937903l-4.7150371-2.8973763zm1.3922036-8.3591304 4.7150371-2.8968952v5.7933091l-.192635-.1183781zm4.7150371-4.6104905-4.3174006-2.6524395-.3976365-.2444556 4.7150371-2.8968951zm-6.1072407-3.757783-4.7131345-2.896414 4.7131345-2.89593268zm-5.155957-3.7524898v-5.79186542l4.7136102 2.89641393zm6.1072406 3.7524898v-5.79379032l4.7150371 2.89689512zm-12.2144812-13.30261951 4.7150371 2.89737635-4.7150371 2.89689514zm-.9512836 0v5.79379028l-4.7155128-2.89641393zm-6.1077163 3.7544146v5.78945941l-4.71170759-2.89497033zm-6.10391112 3.75441459v5.79379032l-4.71503709-2.8973764zm0 22.52119422v5.7937903l-4.71503709-2.8973763zm6.10391112 3.7582643v5.7894594l-4.71170759-2.8944891zm6.1077163 9.5395431-4.7155128-2.8968952 4.7155128-2.8968951zm.9527105 0v-5.7933091l4.7150371 2.8968951zm6.1072406-3.7496025v-5.7899406l4.7117076 2.8949703zm6.1058137-3.7544146v-5.7937903l4.7150371 2.8968952z"
+                  fill="#212838" />
+              </g>
+            </svg>
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+
+              <!-- Products -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp"
+                data-animation-out="fadeOut" data-max-width="600px" data-position="right">
+                <a id="productsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                  href="javascript:;" aria-haspopup="true" aria-expanded="false">Products</a>
+
+                <!-- Products - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="twoColumnsMegaMenu">
+                  <div class="row u-header__mega-menu-wrapper">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <span class="u-header__sub-menu-title">Knowledge Functions</span>
+                      <ul class="u-header__sub-menu-nav-group mb-3">
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Contextual Relevance Scoring</a>
+                        </li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Contextual Sentiment Scoring</a>
+                        </li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Intelligent Web Discovery</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Source Popularity Scoring</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Source Reliability Scoring</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Text Summarization</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Topic Classification</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <span class="u-header__sub-menu-title">Solutions</span>
+                      <ul class="u-header__sub-menu-nav-group">
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Data Distillery</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Rational Exuberance</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Rumor Hound</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Topic Deltas</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Products - Mega Menu -->
+              </li>
+              <!-- End Products -->
+
+
+              <!-- Products -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp"
+                data-animation-out="fadeOut" data-max-width="600px" data-position="right">
+                <a id="productsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                  href="javascript:;" aria-haspopup="true" aria-expanded="false">Use Cases</a>
+
+                <!-- Products - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="twoColumnsMegaMenu">
+                  <div class="row u-header__mega-menu-wrapper">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <span class="u-header__sub-menu-title">Industry</span>
+                      <ul class="u-header__sub-menu-nav-group mb-3">
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Advertising & Marketing</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Banking</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Bio-Technology</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Capital Markets</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <span class="u-header__sub-menu-title">Use Case</span>
+                      <ul class="u-header__sub-menu-nav-group">
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Anti-Money Laundering</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Clinical Trial Intelligence</a>
+                        </li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Competitor Analysis</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Cyber Security Intelligence</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Products - Mega Menu -->
+              </li>
+              <!-- End Products -->
+
+
+              <!-- Company -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp"
+                data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;"
+                  aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Company</a>
+
+                <!-- Blog - Submenu -->
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer"
+                  aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="#">About Us</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Career</a></li>
+                  <li><a class=" nav-link u-header__sub-menu-nav-link" href="#">News and Events</a>
+                  </li>
+                </ul>
+                <!-- End Submenu -->
+              </li>
+              <!-- End Company -->
+
+              <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="#" target="_blank">
+                  Free Trial
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class=" position-relative gradient-half-primary-v1">
+      <div class="container space-3 space-top-md-4 space-top-lg-5">
+        <div class="row justify-content-lg-between align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 font-size-md-down-5 text-white mb-4"><strong>Topic Classification</strong></h1>
+            <p class="lead text-white-70">Classify text snippets into topics autonomously based on the semantic and
+              contextual meaning of the text</p>
+            <a class="btn btn-light my-5" href="#" role="button" target="_blank">Sign up and start building<span
+                class="link__icon ml-1">
+                <span class="link__icon-inner">></span>
+              </span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Background -->
+      <img class="position-absolute right-0 bottom-0 left-0" style="width: 100%; height: fit-content;"
+        src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description">
+      <!-- End SVG Background Section -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Page Nav -->
+    <div class="container pt-1 bg-white sticky-top ">
+      <ul class="js-scroll-nav nav nav-classic nav-borderless justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#keyFeatures">Key Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#example">Example</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#four">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#five">Use Cases</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Page Nav -->
+
+    <!-- Overview Section -->
+    <div id="overview" class="container space-2">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <span class="btn btn-soft-primary btn-pill mb-2">Overview</span>
+      </div>
+      <!-- End Title -->
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-justify">
+          <p class="mb-0">To be able to classify topics accurately you need to understand language like a human. Using a
+            deep-learning mathematical framework each text snippet can be classified into a topic with > 93% accuracy.
+            This framework comprises the latest advancements in natural language processing and understands the
+            contextual
+            meaning of the individual sentence in relation to its adjacent sentences and its placement within the entire
+            paragraph/document. By developing an AI that can understand the semantic and contextual nature of an
+            individual sentence within its surrounding environment, the topic classification can provide a deeper level
+            of
+            understanding as meticulously as a human at scale.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Overview Section -->
+
+    <!-- Features Section -->
+    <div id="keyFeatures" class="container space-2">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <span class="btn btn-soft-primary btn-pill mb-2">Key Features</span>
+      </div>
+      <!-- End Title -->
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-7 mb-9 mb-lg-0">
+          <div class="mb-4">
+            <h2 class="font-weight-medium mb-4">Key Features</h2>
+          </div>
+          <ul class="list-unstyled">
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>Language has multi-scaled representation - </strong></span>
+                <p class="d-inline">It is looking at words that are near and far away from each other in terms of their
+                  relationships.</p>
+              </div>
+            </li>
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>Builds memory across the board - </strong></span>
+                <p class="d-inline">The model has been trained to extract context from sentences, near and far, in the
+                  document to build memory in the system.</p>
+              </div>
+            </li>
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>List of topics is expandable - </strong></span>
+                <p class="d-inline">Users can start adding their own list of topics which can better increase the
+                  accuracy and value of the AI.</p>
+              </div>
+            </li>
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>Dynamic Learning - </strong></span>
+                <p class="d-inline">The model keeps growing in size, as well as gets smarter as it encounters new data
+                  and this is able to deliver more value over time.</p>
+              </div>
+            </li>
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>Human-like understanding - </strong></span>
+                <p class="d-inline">The model achieves 93% accuracy with respect to the Bayes Error.</p>
+              </div>
+            </li>
+            <li class="media mb-5">
+              <span class="btn btn-icon btn-xs btn-soft-primary rounded-circle mt-1 mr-3">
+                <span class="fas fa-check btn-icon__inner"></span>
+              </span>
+              <div class="media-body">
+                <span><strong>Rapid contextual learning - </strong></span>
+                <p class="d-inline">With a very limited training dataset the AI is able to rapidly learn the context</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <img class="img-fluid" src="../../assets/svg/components/custom/dots.svg" alt="Image Description">
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Demo Section -->
+    <div id="example" class="container space-2">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <span class="btn btn-soft-primary btn-pill mb-2">Example</span>
+      </div>
+      <!-- End Title -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="bg-dark rounded min-height-450 p-3">
+            <!-- Nav -->
+            <ul class="nav nav-pills nav-white nav-justified font-weight-medium" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link btn-secondary active" id="pills-one-code-sample-tab" data-toggle="pill"
+                  href="#pills-one-code-sample" role="tab" aria-controls="pills-one-code-sample" aria-selected="true">
+                  INPUT
+                </a>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+            <!-- End Nav -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade pt-5 show active" id="pills-one-code-sample" role="tabpanel"
+                aria-labelledby="pills-one-code-sample-tab">
+                <!-- Code Sample -->
+                <div class="text-monospace font-size-1">
+                  <div class="mb-3">
+                    <span class="text-danger">data</span>
+                    <span class="text-white-70">= [</span>
+                  </div>
+                  <div class="pl-6 mb-3">
+                    <span class="text-white-70">{ "</span>
+                    <span class="text-primary">text</span>
+                    <span class="text-white-70">":</span>
+                  </div>
+                  <div class="pl-10 mb-3">
+                    <span class="text-white-70">[ "</span>
+                    <span class="text-white">For example, last month, Stanford Medicine reported results of the
+                      Apple Heart Study, the largest study ever of its kind which enrolled over 400,000
+                      participants from all 50 states in a span of only eight months</span>
+                    <span class="text-white-70">" ]</span>
+                  </div>
+                  <div class="pl-6 mb-3">
+                    <span class="text-white-70">}</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="text-white-70">]</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="text-danger">response</span>
+                    <span class="text-white-70">= requests</span>
+                    <span class="text-white-70">.</span>
+                    <span class="text-success">post</span>
+                    <span class="text-white-70">(</span>
+                    <span class="text-warning">ACCRETE.CONCEPT</span>
+                    <span class="text-white-70">,</span>
+                    <span class="text-danger">data</span>
+                    <span class="text-white-70">=</span>
+                    <span class="text-white-70">data )</span>
+                  </div>
+                  <div class="mb-1">
+                    <span class="text-primary">return</span>
+                    <span class="text-white-70">(</span>
+                    <span class="text-danger">response</span>
+                    <span class="text-white-70">.</span>
+                    <span class="text-success">json</span>
+                    <span class="text-white-70">())</span>
+                  </div>
+                </div>
+                <!-- End Code Sample -->
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="bg-light rounded min-height-450 p-3">
+            <!-- Nav -->
+            <ul class="nav nav-pills nav-justified font-weight-medium" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link btn-secondary active" id="pills-one-code-sample-out-tab" data-toggle="pill"
+                  href="#pills-one-code-sample-out" role="tab" aria-controls="pills-one-code-sample-out"
+                  aria-selected="true">
+                  OUTPUT
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-two-code-sample-out-tab" data-toggle="pill"
+                  href="#pills-two-code-sample-out" role="tab" aria-controls="pills-two-code-sample-out"
+                  aria-selected="false">
+                  RUN
+                </a>
+              </li>
+            </ul>
+            <!-- End Nav -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade pt-5 show active" id="pills-one-code-sample-out" role="tabpanel"
+                aria-labelledby="pills-one-code-sample-out-tab">
+
+              </div>
+
+              <div class="tab-pane fade text-white-70 pt-5" id="pills-two-code-sample-out" role="tabpanel"
+                aria-labelledby="pills-two-code-sample-out-tab">
+                <!-- Code Sample -->
+                <div class="text-monospace font-size-1">
+                  <div class="mb-3">
+                    <span class="text-primary">result</span>
+                    <span class="text-secondary">: " "</span>
+                  </div>
+                  <div class="pl-6 mb-3">
+                    <span class="text-secondary">[ " \</span>
+                    <span class="text-success">Cardiovascular</span>
+                    <span class="text-secondary">\ " ] , [</span>
+                    <span class="text-success">0.5477317571640015</span>
+                    <span class="text-secondary">]</span>
+                  </div>
+                  <div class="mb-1">
+                    <span class="text-secondary">" "</span>
+                  </div>
+                </div>
+                <!-- End Code Sample -->
+              </div>
+            </div>
+          </div>
+          <!-- End Tab Content -->
+        </div>
+      </div>
+      <div class="space-1 text-center">
+        <a class="btn btn-primary" href="#" role="button">Full API Documentation</a>
+      </div>
+    </div>
+    <!-- End Demo Section -->
+
+    <!-- How It Works Section -->
+    <div id="howItWorks" class="container space-2">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <span class="btn btn-soft-primary btn-pill mb-2">How It Works</span>
+      </div>
+      <!-- End Title -->
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-4 d-none d-lg-block">
+          <img class="img-fluid" src="../../assets/svg/components/custom/dots.svg" alt="Image Description">
+        </div>
+        <div class="col-lg-7 mb-9 mb-lg-0">
+          <div class="mb-4">
+            <p class="text-justify">The model starts by converting the text into a multi-scale numerical
+              representation. This
+              representation allows the model to build a multi-scale memory from the text, and thus is able to
+              extract the most relevant information related to the task. These numerical representations are then
+              passed on to a custom architecture based deep-learning network module. We have been conducting
+              extensive research to build a continuous dynamic learning network, that can learn from the feedback
+              given by a user, without going into catastrophic forgetting, as is usually the case with online
+              learning for deep-learning networks. Our network has the ability to semi-autonomously grow in size, to
+              alleviate this issue as well as become smarter as it looks at more data, just like a child becomes an
+              educated adult.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End How It Works Section -->
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="container space-2">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <span class="btn btn-soft-primary btn-pill mb-2">Pricing</span>
+      </div>
+      <!-- End Title -->
+      <!-- Table -->
+      <div class="table-responsive-lg w-lg-85 mx-lg-auto">
+        <table class="table table-striped table-borderless">
+          <thead class="text-center">
+            <tr>
+              <th scope="col" class="w-25"></th>
+              <th scope="col" class="w-20">Free
+                <small class="d-block text-secondary">$0/mo</small>
+              </th>
+              <th scope="col" class="w-20 border-left border-right">Standard
+                <small class="d-block text-secondary">$500/mo</small>
+              </th>
+              <th scope="col" class="w-20">Premium
+                <small class="d-block text-secondary">$2,500/mo</small>
+              </th>
+              <th scope="col" class="w-20">Enterprise
+                <small class="d-block text-secondary">POA</small>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">No. of Calls</th>
+              <td class="text-center text-secondary p-3">500</td>
+              <td class="text-center text-secondary border-left border-right p-3">50,000</td>
+              <td class="text-center text-secondary border-left border-right p-3">500,000</td>
+              <td class="text-center text-secondary p-3">Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">Additional Call Cost</th>
+              <td class="text-center text-secondary p-3">500</td>
+              <td class="text-center text-secondary border-left border-right p-3">50,000</td>
+              <td class="text-center text-secondary border-left border-right p-3">500,000</td>
+              <td class="text-center text-secondary p-3"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">Documents</th>
+              <td class="text-center text-secondary p-3">≈ 1</td>
+              <td class="text-center text-secondary border-left border-right p-3">≈ 100</td>
+              <td class="text-center text-secondary border-left border-right p-3">≈ 1,000</td>
+              <td class="text-center text-secondary p-3">1,000+</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="bg-white p-3"></th>
+              <td class="bg-white text-center p-3">
+                <!-- <button type="button" class="btn btn-xs btn-soft-indigo transition-3d-hover">Choose Plan</button> -->
+              </td>
+              <td class="bg-white text-center border-left border-right p-3">
+                <!-- <button type="button" class="btn btn-xs btn-soft-indigo transition-3d-hover">Choose Plan</button> -->
+              </td>
+              <td class="bg-white text-center border-left border-right p-3">
+                <!-- <button type="button" class="btn btn-xs btn-soft-indigo transition-3d-hover">Choose Plan</button> -->
+              </td>
+              <td class="bg-white text-center p-3">
+                <button type="button" class="btn btn-xs btn-primary transition-3d-hover">Contact Us</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End Table -->
+    </div>
+    <!-- End Pricing Section -->
+
+    <!-- CTA Section -->
+
+    <div class="bg-primary text-white text-center">
+      <div class="container space-1">
+        <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
+          <span class="font-weight-semi-bold">Accrete Knowledge Functions</span> – the simplest and fastest way to
+          build.
+        </span>
+        <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3" href="#">Start Free Trial</a>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <!-- Lists -->
+    <div class="border-bottom">
+      <div class="container space-2">
+        <div class="row justify-content-md-around">
+          <div class="col-sm-4 col-lg-3 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">Knowledge Functions</h4>
+            <!-- List Group -->
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li><a class="list-group-item list-group-item-action" href="#">Contextual Relevance Scoring</a>
+              </li>
+              <li><a class="list-group-item list-group-item-action" href="#">Contextual Sentiment Scoring</a>
+              </li>
+              <li><a class="list-group-item list-group-item-action" href="#">Intelligent Web Discovery</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Source Popularity Scoring</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Source Reliability Scoring</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Text Summarization</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Topic Classification</a></li>
+
+            </ul>
+            <!-- End List Group -->
+            <hr>
+            <h4 class="h6 font-weight-semi-bold">Solutions</h4>
+            <!-- List Group -->
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li><a class="list-group-item list-group-item-action" href="#">Data Distillery</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Rational Exuberance</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Rumor Hound</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Topic Deltas</a></li>
+
+            </ul>
+            <!-- End List Group -->
+          </div>
+
+          <div class="col-sm-4 col-lg-3 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">Industry</h4>
+            <!-- List Group -->
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li><a class="list-group-item list-group-item-action" href="#">Advertising & Marketing</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Banking</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Bio-Technology</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Capital Markets</a></li>
+            </ul>
+            <!-- End List Group -->
+            <hr>
+            <h4 class="h6 font-weight-semi-bold">Use Case</h4>
+            <!-- List Group -->
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li><a class="list-group-item list-group-item-action" href="#">Anti-Money Laundering</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Clinical Trial Intelligence</a>
+              </li>
+              <li><a class="list-group-item list-group-item-action" href="#">Competitor Analysis</a></li>
+              <li><a class="list-group-item list-group-item-action" href="#">Cyber Security Intelligence</a>
+            </ul>
+            <!-- End List Group -->
+          </div>
+
+          <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">More</h4>
+
+            <!-- List Group -->
+            <ul class="list-group list-group-flush list-group-borderless mb-0">
+              <li><a class="list-group-item list-group-item-action" href="#">Documentation</a></li>
+              <li><a class="list-group-item list-group-item-action" href="https://blog.accrete.ai">Blog</a></li>
+              <li><a class="list-group-item list-group-item-action" href="https://blog.accrete.ai/newsroom">News &
+                  Events</a></li>
+              <li><a class="list-group-item list-group-item-action"
+                  href="https://www.accrete.ai/pages/privacy_policy">Privacy Policy</a>
+              </li>
+              <li><a class="list-group-item list-group-item-action"
+                  href="https://www.accrete.ai/services-agreement">Terms of Use</a></li>
+            </ul>
+            <!-- End List Group -->
+          </div>
+
+          <div class="col-sm-4 col-lg-2 mb-5 mb-lg-0">
+            <h4 class="h6 font-weight-semi-bold">Social</h4>
+
+            <!-- List Group -->
+            <ul class="list-unstyled">
+              <li>
+                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent"
+                  href="https://twitter.com/AccreteAI">
+                  <span class="fab fa-twitter btn-icon__inner"></span>
+                </a>
+              </li>
+              <li style="padding:0;">
+                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent"
+                  href="https://www.facebook.com/Accretellc/">
+                  <span class="fab fa-facebook-f btn-icon__inner"></span>
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent"
+                  href="https://www.linkedin.com/company/accrete-ai">
+                  <span class="fab fa-linkedin-in btn-icon__inner"></span>
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="mailto:inquiries@accrete.ai">
+                  <span class="far fa-envelope btn-icon__inner"></span>
+                </a>
+              </li>
+            </ul>
+            <!-- End List Group -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Lists -->
+
+    <!-- Copyright -->
+    <div class="container text-center space-1">
+      <!-- Logo -->
+      <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
+        <svg height="46" viewBox="0 0 209 46" width="209" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none">
+            <path
+              d="m74.6918817 33.4387097c-1.780654 2.6116259-4.4367565 3.9174193-7.9683871 3.9174193-3.2051773 0-5.8167641-1.1128921-7.8348387-3.3387096-1.9587195-2.1961401-2.9380645-4.9115968-2.9380645-8.1464517 0-3.2348548.979345-5.9503116 2.9380645-8.1464516 2.0180746-2.2258176 4.7038542-3.3387096 8.0574194-3.3387096 3.3535651 0 5.9354748 1.3206319 7.7458064 3.9619354v-3.6058064h3.3387097v22.2580645h-3.3387097zm-7.5232258.8903226c2.403883 0 4.3032188-.8309595 5.6980645-2.4929033 1.3354906-1.5729111 2.0032258-3.5612783 2.0032258-5.9651613 0-2.4038829-.6677352-4.3922502-2.0032258-5.9651612-1.3948457-1.6619438-3.2941815-2.4929033-5.6980645-2.4929033-2.3742054 0-4.3032184.8309595-5.7870968 2.4929033-1.3948456 1.572911-2.092258 3.5612783-2.092258 5.9651612 0 2.403883.6974124 4.3922502 2.092258 5.9651613 1.4838784 1.6619438 3.4128914 2.4929033 5.7870968 2.4929033zm27.2413979 0c1.4245232 0 2.6858009-.4006412 3.7838709-1.2019355 1.09807-.8012944 1.8993523-1.8399936 2.4038713-3.1161291h3.605806c-.682584 2.1961401-1.929023 3.9619288-3.739355 5.2974194-1.899364 1.3651681-4.1548253 2.0477419-6.7664513 2.0477419-3.2645325 0-5.9206349-1.1128921-7.9683871-3.3387096-1.988397-2.1664625-2.9825806-4.8819192-2.9825806-8.1464517 0-3.2645324.9941836-5.9799891 2.9825806-8.1464516 2.0477522-2.2258176 4.7038546-3.3387096 7.9683871-3.3387096 2.611626 0 4.8670873.6825738 6.7664513 2.0477419 1.810332 1.3354905 3.056771 3.1012793 3.739355 5.2974193h-3.605806c-.504519-1.2761354-1.3058013-2.3148347-2.4038713-3.116129s-2.3593477-1.2019355-3.7838709-1.2019355c-1.4245233 0-2.633866.2225784-3.6280646.667742-.9941985.4451635-1.8325772 1.0535445-2.5151612 1.8251613-1.4542009 1.6025886-2.1812904 3.5909558-2.1812904 5.9651612 0 2.3742055.7270895 4.3625727 2.1812904 5.9651613 1.4838783 1.6619438 3.5315998 2.4929033 6.1432258 2.4929033zm24.5259142 0c1.424523 0 2.685801-.4006412 3.783871-1.2019355 1.09807-.8012944 1.899352-1.8399936 2.403871-3.1161291h3.605806c-.682584 2.1961401-1.929023 3.9619288-3.739355 5.2974194-1.899364 1.3651681-4.154825 2.0477419-6.766451 2.0477419-3.264533 0-5.920635-1.1128921-7.968387-3.3387096-1.988397-2.1664625-2.982581-4.8819192-2.982581-8.1464517 0-3.2645324.994184-5.9799891 2.982581-8.1464516 2.047752-2.2258176 4.703854-3.3387096 7.968387-3.3387096 2.611626 0 4.867087.6825738 6.766451 2.0477419 1.810332 1.3354905 3.056771 3.1012793 3.739355 5.2974193h-3.605806c-.504519-1.2761354-1.305801-2.3148347-2.403871-3.116129s-2.359348-1.2019355-3.783871-1.2019355c-1.424524 0-2.633866.2225784-3.628065.667742-.994198.4451635-1.832577 1.0535445-2.515161 1.8251613-1.454201 1.6025886-2.18129 3.5909558-2.18129 5.9651612 0 2.3742055.727089 4.3625727 2.18129 5.9651613 1.483878 1.6619438 3.5316 2.4929033 6.143226 2.4929033zm25.994946-19.9432258v3.3387096h-.400645c-2.403883 0-4.362573.9645065-5.876129 2.8935484-1.424523 1.8400092-2.136774 4.0361163-2.136774 6.5883871v9.7935484h-3.33871v-22.2580645h3.33871v5.4754839c.712261-2.3148503 2.255472-4.0212849 4.629677-5.1193549.97936-.4748411 2.166445-.712258 3.56129-.712258zm13.263333 19.9432258c2.997435 0 5.149026-1.2464392 6.454839-3.7393549h3.650323c-.771617 2.0180746-1.995798 3.6503164-3.672581 4.8967742-1.676783 1.2464579-3.835793 1.8696774-6.477097 1.8696774-3.353565 0-6.08386-1.1128921-8.190968-3.3387096-2.047752-2.1664625-3.071612-4.8819192-3.071612-8.1464517 0-3.29421.979345-6.0096667 2.938064-8.1464516 2.07743-2.2258176 4.778048-3.3387096 8.101936-3.3387096 3.323887 0 6.024505 1.112892 8.101935 3.3387096 1.958719 2.1367849 2.938065 4.8522416 2.938065 8.1464516v1.3354839h-18.652259c.237421 2.0477522 1.053542 3.7393482 2.448388 5.0748387 1.424523 1.3651681 3.234827 2.047742 5.430967 2.047742zm-.267096-16.9161291c-2.047753 0-3.769026.6380582-5.163871 1.9141936-1.305813 1.2167803-2.107096 2.8045063-2.403871 4.7632258h15.135483c-.296775-1.9587195-1.098058-3.5464455-2.40387-4.7632258-1.394846-1.2761354-3.116119-1.9141936-5.163871-1.9141936zm17.581397 19.5870968v-19.32h-4.540645v-2.9380645h4.540645v-7.96838711h3.33871v7.96838711h5.119355v2.9380645h-5.119355v19.32zm21.899463-2.6709677c2.997434 0 5.149025-1.2464392 6.454838-3.7393549h3.650323c-.771617 2.0180746-1.995798 3.6503164-3.672581 4.8967742-1.676782 1.2464579-3.835793 1.8696774-6.477096 1.8696774-3.353566 0-6.083861-1.1128921-8.190968-3.3387096-2.047752-2.1664625-3.071613-4.8819192-3.071613-8.1464517 0-3.29421.979345-6.0096667 2.938064-8.1464516 2.07743-2.2258176 4.778048-3.3387096 8.101936-3.3387096s6.024506 1.112892 8.101935 3.3387096c1.95872 2.1367849 2.938065 4.8522416 2.938065 8.1464516v1.3354839h-18.652258c.23742 2.0477522 1.053541 3.7393482 2.448387 5.0748387 1.424523 1.3651681 3.234828 2.047742 5.430968 2.047742zm-.267097-16.9161291c-2.047752 0-3.769025.6380582-5.163871 1.9141936-1.305813 1.2167803-2.107095 2.8045063-2.403871 4.7632258h15.135484c-.296776-1.9587195-1.098058-3.5464455-2.403871-4.7632258-1.394846-1.2761354-3.116119-1.9141936-5.163871-1.9141936z"
+              fill="#1c212b" />
+            <path
+              d="m37.3626141 11.3301322-6.1072406-3.75200851c-.0023782-.00144363-.0047564-.00192484-.0071346-.00336848s-.0042808-.00336848-.006659-.00481212c-.0014269-.00096242-.0033295-.00144363-.0052321-.00240606l-6.0582495-3.72169219c-.0099884-.0081806-.01855-.01732362-.0294898-.0245418l-6.1077162-3.75200854c-.0023782-.00144363-.0047564-.00192485-.0071347-.00288727-.0023782-.00144363-.0042807-.00384969-.0066589-.00529333-.0166475-.00962424-.0347219-.01347393-.051845-.02069211-.0195013-.00866181-.0380513-.01828605-.0585039-.02406059-.0195014-.00529333-.0394783-.00625575-.0594553-.00866181-.0209282-.00336848-.0418564-.00769939-.0632603-.00769939s-.0418565.00433091-.0632604.00769939c-.0199769.00240606-.0399539.00336848-.0594552.00914302-.019977.00529333-.0390026.01491757-.0585039.02309817-.0171231.00769939-.0351975.01154908-.051845.02117332-.0028539.00144364-.0047564.0038497-.0071346.00529333-.0023782.00144364-.0047564.00144364-.0071347.00288727l-6.1072406 3.75200854c-.0038051.00240606-.006659.00625575-.0099885.00866181l-6.09392261 3.74334672c-.00856156.00529333-.0147449.01251151-.02283081.01876727l-6.08440982 3.73805336c-.1422169.0875806-.22830806.243012-.22830806.4109549 0 .0009624.00047564.0019249.00047564.0033685 0 .0009624-.00047564.0019249-.00047564.0028873v7.504017.0028873 7.5040171 7.5040171c0 .0428278.0057077.0846932.01617182.125115.00332949.0120303.00998848.0235794.01426925.0356097.00998848.0269479.01855003.0538957.03281929.0789187.00713463.0125116.0171231.0230982.02568466.0351285.01522053.0216545.02996543.0437903.0489911.0630388.0114154.011549.02568466.0202109.03805134.0307975.01712311.0139552.03281929.0303164.0523206.0423467l6.0853611 3.7390158c.00808591.0057745.01379362.0125115.02187953.0178048l6.10771631 3.7520085c.0038051.0024061.0085615.0033685.0123666.0057746l6.0915445 3.7419031c.0038051.002406.0080859.0028872.0114154.0052933.0014269.0004812.0023782.0019249.0038051.0028873.0142693.0081806.0294898.0115491.0442347.0178048.0223552.0101055.0437591.0211733.0670655.0279103.0309167.0086618.0632604.0110679.095604.0129927.0085616.0004812.0161718.0033685.025209.0033685.0099885 0 .0180744-.0028873.026636-.0033685.0323436-.0019248.0646872-.0048121.095604-.0129927.0228308-.0062558.0432834-.0173236.0651629-.0269479.0147449-.0067369.0309167-.0101054.0461372-.0187672.001427-.0009624.0023782-.0024061.0042808-.0033685.0033295-.0019249.0076103-.0028873.0104641-.0048121l6.0915445-3.7419031c.0038051-.0024061.0085615-.0033685.0123667-.0057746l6.1072406-3.7520085c.0057077-.0033685.0095128-.0086618.0142692-.0115491l6.094874-3.7447903c.0199769-.0120303.0356731-.0283915.0532719-.0433091.011891-.0101054.0261603-.0187673.0371-.0298351.0175988-.0178049.0309167-.0389782.0456616-.0596703.0099885-.0129927.0209283-.025023.0290142-.0389782.0128423-.0230981.0214039-.0481211.0304411-.0726629.005232-.0139552.0123667-.0269479.0166474-.0413843.0099885-.0404217.0161718-.0822872.0161718-.125115v-7.5044983-7.5040171c0-.0004812 0-.0009624 0-.0014436v-7.5059419c0-.0009625-.0004756-.0019249-.0004756-.0028873 0-.0014436.0004756-.0024061.0004756-.0028873 0-.1684241-.0870424-.3238555-.2287837-.4109549zm-.7224998 16.2832455v5.7933091l-4.7150371-2.8968952zm-30.97426926 2.8964139-4.71503709 2.8968952v-5.7933091zm-3.97493846-12.5687714-.74009863.4547451v-5.7937902l4.71503709 2.8968951zm34.50828772 8.8172441-4.7150371 2.8968951v-5.7937902l4.5380984 2.7881412zm-33.04045715-1.0860951 2.94802783-1.8108v5.793309l-4.71503709-2.8968951zm20.82597595 8.589631-4.7150371 2.8973763v-5.7937903zm-5.6663207 2.8973763-4.7155128-2.8973763 4.7155128-2.8968952zm-10.81942389-21.6603063 4.71170759-2.8949703v5.7894594l-.3800378-.2329065zm22.19534869.2444556-4.3174006 2.6524395v-5.793309l4.7150371 2.8968951zm-5.7096041 11.0101264-4.7150371 2.8973763v-5.7942715l1.4702088.9032346zm-5.6663207 2.8968951-4.7155128-2.8968951 4.7155128-2.8968952zm-4.7155128-10.4009122 4.7155128-2.8968951v5.793309zm-.4375904-.8570382v-5.7894594l4.7121832 2.8949703zm0 7.504017v-5.7899406l4.7117076 2.8949703-1.1986173.7362541zm6.1043868-3.7500837v-5.793309l4.7150371 2.8968951-.950808.5841912zm5.155957-3.7520085-4.7155127-2.8973763 4.7155127-2.896414zm-16.92666449 4.6119341 4.71170759-2.8949703v5.7894593l-3.78991379-2.3285839zm5.66632069 4.6090467 4.7121832 2.8949703-4.7121832 2.8949703zm11.2603438-1.7174449-2.9408932-1.8064692-1.7741439-1.090426 3.1087948-1.9099297 1.6062423-.9869654zm1.3922035-6.6464977 4.7150371-2.8968951v5.7933091zm-7.4994441-4.611934-4.7155128-2.8968951 4.7155128-2.89689518zm-11.26034383 1.7145577 4.71503713 2.8973763-4.71503713 2.8968952zm0 7.5073856 2.98940863 1.8363042 1.7256285 1.0601097-4.71503713 2.8968951zm5.15262753 3.7539333v5.7894594l-4.71170759-2.8949703zm12.2149569 5.7913843-4.7155127-2.8968952 4.7155127-2.8968951zm.9512836-5.7933091 4.7150371 2.8968951-4.7150371 2.8968952zm0-1.710708v-5.7933091l4.7150371 2.8968952-4.5224022 2.7780358zm6.1072406-9.5482049 4.7150371 2.8968951-4.7150371 2.8968952zm-7.0585242-5.4670474-1.6062423-.98696548-3.1092704-1.91041091 4.7155127-2.89689514zm-.4409199.8551134-4.7150371 2.8968951v-5.79330907l3.7642291 2.31270397zm-10.8194239-.8575195v-5.78945937l4.7121832 2.8954515zm-7.05852422 11.2627626-4.71503709-2.8968952 4.71503709-2.8973763zm19.71107152 4.6104904.1769388-.1087539 4.5380983-2.7881412v5.793309zm-18.75978793-17.91407232 4.71503713 2.89689512-4.71503713 2.8973764zm-6.10724062 17.05847772v-5.7933091l4.71503709 2.8968952-.67160621.4123985zm6.10724062 5.4627165 4.71503713 2.8968952-4.71503713 2.8973763zm6.10724063 3.7539334 4.7121832 2.8954515-4.7121832 2.8949703zm11.2584412 5.7899406-4.7117076-2.8949703 4.7117076-2.8954515zm6.1091432-9.543874v5.7937903l-4.7150371-2.8973763zm1.3922036-8.3591304 4.7150371-2.8968952v5.7933091l-.192635-.1183781zm4.7150371-4.6104905-4.3174006-2.6524395-.3976365-.2444556 4.7150371-2.8968951zm-6.1072407-3.757783-4.7131345-2.896414 4.7131345-2.89593268zm-5.155957-3.7524898v-5.79186542l4.7136102 2.89641393zm6.1072406 3.7524898v-5.79379032l4.7150371 2.89689512zm-12.2144812-13.30261951 4.7150371 2.89737635-4.7150371 2.89689514zm-.9512836 0v5.79379028l-4.7155128-2.89641393zm-6.1077163 3.7544146v5.78945941l-4.71170759-2.89497033zm-6.10391112 3.75441459v5.79379032l-4.71503709-2.8973764zm0 22.52119422v5.7937903l-4.71503709-2.8973763zm6.10391112 3.7582643v5.7894594l-4.71170759-2.8944891zm6.1077163 9.5395431-4.7155128-2.8968952 4.7155128-2.8968951zm.9527105 0v-5.7933091l4.7150371 2.8968951zm6.1072406-3.7496025v-5.7899406l4.7117076 2.8949703zm6.1058137-3.7544146v-5.7937903l4.7150371 2.8968952z"
+              fill="#212838" />
+          </g>
+        </svg>
+      </a>
+      <!-- End Logo -->
+
+      <!-- Logo -->
+      <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+
+      </a>
+      <!-- End Logo -->
+      <p class="small text-muted mt-2">&copy; Accrete LLC 2019. All rights reserved.</p>
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed"
+    data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/appear.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // initialization of HSScrollNav component
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700
+      });
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+
+</body>
+
+</html>
