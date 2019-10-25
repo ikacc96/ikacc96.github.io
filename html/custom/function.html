@@ -248,46 +248,29 @@
     </div>
     <!-- End Hero Section -->
 
-    <!-- Page Nav -->
-    <div class="container pt-1 bg-white sticky-top d-none d-sm-block">
-      <ul class="js-scroll-nav nav nav-classic nav-borderless justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#overview">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#keyFeatures">Key Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#howItWorks">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
+    <!-- Mid Level Nav -->
+    <nav id="midNavbar" class="bg-white sticky-top d-none d-sm-block">
+      <ul class="list-unstyled nav nav-classic nav-borderless justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#keyFeatures">Key Features</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#howItWorks">How It Works</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#pricing">Pricing</a></li>
       </ul>
-    </div>
-    <!-- End Page Nav -->
+    </nav>
 
-    <!-- Page Nav -->
-    <div class="container pt-1 bg-white d-block d-sm-none">
-      <ul class="js-scroll-nav nav nav-classic nav-borderless flex-column align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#overview">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#keyFeatures">Key Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#howItWorks">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
+    <nav class="bg-white d-block d-sm-none">
+      <ul class="list-unstyled nav nav-classic nav-borderless flex-column align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#keyFeatures">Key Features</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#howItWorks">How It Works</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#pricing">Pricing</a></li>
       </ul>
-    </div>
-    <!-- End Page Nav -->
+    </nav>
+
+    <!-- End Mid Level Nav -->
 
     <!-- Overview Section -->
-    <div id="overview" class="container space-2">
+    <div id="overview" class="sectionCustom container space-2">
       <!-- Title -->
       <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
         <span class="btn btn-soft-primary btn-pill mb-2">Overview</span>
@@ -295,13 +278,16 @@
       <!-- End Title -->
       <div class="row justify-content-center">
         <div class="col-md-9 text-justify">
-          <p class="mb-0">To be able to classify topics accurately you need to understand language like a human. Using a
+          <p class="mb-0">To be able to classify topics accurately you need to understand language like a human. Using
+            a
             deep-learning mathematical framework each text snippet can be classified into a topic with > 93% accuracy.
             This framework comprises the latest advancements in natural language processing and understands the
             contextual
-            meaning of the individual sentence in relation to its adjacent sentences and its placement within the entire
+            meaning of the individual sentence in relation to its adjacent sentences and its placement within the
+            entire
             paragraph/document. By developing an AI that can understand the semantic and contextual nature of an
-            individual sentence within its surrounding environment, the topic classification can provide a deeper level
+            individual sentence within its surrounding environment, the topic classification can provide a deeper
+            level
             of
             understanding as meticulously as a human at scale.</p>
         </div>
@@ -310,7 +296,7 @@
     <!-- End Overview Section -->
 
     <!-- Features Section -->
-    <div id="keyFeatures" class="container space-2">
+    <div id="keyFeatures" class="sectionCustom container space-2">
       <!-- Title -->
       <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
         <span class="btn btn-soft-primary btn-pill mb-2">Key Features</span>
@@ -328,7 +314,8 @@
               </span>
               <div class="media-body">
                 <span><strong>Language has multi-scaled representation - </strong></span>
-                <p class="d-inline">It is looking at words that are near and far away from each other in terms of their
+                <p class="d-inline">It is looking at words that are near and far away from each other in terms of
+                  their
                   relationships.</p>
               </div>
             </li>
@@ -377,7 +364,8 @@
               </span>
               <div class="media-body">
                 <span><strong>Rapid contextual learning - </strong></span>
-                <p class="d-inline">With a very limited training dataset the AI is able to rapidly learn the context</p>
+                <p class="d-inline">With a very limited training dataset the AI is able to rapidly learn the context
+                </p>
               </div>
             </li>
 
@@ -391,7 +379,7 @@
     </div>
     <!-- End Features Section -->
 
-    <div id="howItWorks">
+    <div id="howItWorks" class="sectionCustom">
       <!-- Demo Section -->
       <div id="" class="container space-2">
         <!-- Title -->
@@ -562,7 +550,7 @@
     </div>
 
     <!-- Pricing Section -->
-    <div id="pricing" class="container space-2">
+    <div id="pricing" class="sectionCustom container space-2">
       <!-- Title -->
       <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
         <span class="btn btn-soft-primary btn-pill mb-2">Pricing</span>
@@ -807,10 +795,10 @@
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
-  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
   <script src="../../assets/js/components/hs.fancybox.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/custom/custom-scroll.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -821,14 +809,6 @@
         pageContainer: $('.container'),
         breakpoint: 767.98,
         hideTimeOut: 0
-      });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-
-      // initialization of HSScrollNav component
-      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
-        duration: 700
       });
 
     });
@@ -846,7 +826,9 @@
 
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
+
     });
+
   </script>
 
 </body>
