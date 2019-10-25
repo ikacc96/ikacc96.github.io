@@ -84,8 +84,8 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html"
-            aria-label="Front">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center pb-2 pb-sm-0"
+            href="../home/index.html" aria-label="Front">
             <svg height="46" viewBox="0 0 209 46" width="209" xmlns="http://www.w3.org/2000/svg">
               <g fill="none">
                 <path
@@ -248,8 +248,27 @@
     <!-- End Hero Section -->
 
     <!-- Page Nav -->
-    <div class="container pt-1 bg-white sticky-top ">
+    <div class="container pt-1 bg-white sticky-top d-none d-sm-block">
       <ul class="js-scroll-nav nav nav-classic nav-borderless justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#keyFeatures">Key Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#howItWorks">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Page Nav -->
+
+    <!-- Page Nav -->
+    <div class="container pt-1 bg-white d-block d-sm-none">
+      <ul class="js-scroll-nav nav nav-classic nav-borderless flex-column align-items-center">
         <li class="nav-item">
           <a class="nav-link active" href="#overview">Overview</a>
         </li>
@@ -786,6 +805,7 @@
   <!-- JS Front -->
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.unfold.js"></script>
   <script src="../../assets/js/components/hs.scroll-nav.js"></script>
   <script src="../../assets/js/components/hs.fancybox.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
@@ -809,17 +829,19 @@
       $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
         duration: 700
       });
+
     });
 
     $(document).on('ready', function () {
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
 
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate');
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
 
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
