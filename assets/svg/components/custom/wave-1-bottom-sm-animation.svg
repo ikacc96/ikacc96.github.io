@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="140px" fill="none">
+    <path 
+        fill="#ffffff" fill-opacity="1" 
+        d="M0 70 
+               C 1000,180
+               1500,-50
+               1920,40 
+
+               V 359 
+               H 0 
+               V 67 
+               Z">
+    <animate 
+            repeatCount="indefinite" 
+            fill="#454599" 
+            attributeName="d" 
+            dur="15s" 
+            values="
+                    M0 70 
+                    C 1000,180
+                    1500,-50
+                    1920,40 
+
+                    V 359 
+                    H 0 
+                    V 67 
+                    Z;
+
+                    M0 70 
+                    C 300,30
+                    700,40
+                    1920,60 
+
+                    V 359 
+                    H 0 
+                    V 67 
+                    Z;
+
+                    M0 50 
+                    C 200,50
+                    1200,100
+                    1920,80 
+
+                    V 359 
+                    H 0 
+                    V 67 
+                    Z;
+
+                    M0 65
+                    C 1100,150
+                    1250,0
+                    1920,50 
+
+                    V 359 
+                    H 0 
+                    V 67 
+                    Z;
+
+                    M0 70 
+                    C 1000,180
+                    1500,-50
+                    1920,40 
+
+                    V 359 
+                    H 0 
+                    V 67 
+                    Z
+                    ">
+        </animate>
+    </path>
+    <path
+            fill="#fff" fill-opacity="0.5"
+            d="M0 50 
+               C 1000,170
+               1500,-50
+               1920,40 
+
+               V 359 
+               H 0 
+               V 67 
+               Z">
+         <animate
+                 repeatCount="indefinite" 
+                 fill="#454599" 
+                 attributeName="d" 
+                 dur="16s" 
+                 values="
+                         M0 50 
+                         C 1000,170
+                         1500,-50
+                         1920,40 
+
+                         V 359 
+                         H 0 
+                         V 67 
+                         Z;
+
+                         M0 70 
+                         C 300,30
+                         700,20
+                         1920,40 
+
+                         V 359 
+                         H 0 
+                         V 67 
+                         Z;
+
+                         M0 65
+                         C 1100,150
+                         1250,0
+                         1920,50 
+
+                         V 359 
+                         H 0 
+                         V 67 
+                         Z;
+
+                         M0 50 
+                         C 1000,170
+                         1500,-20
+                         1920,50 
+
+                         V 359 
+                         H 0 
+                         V 67 
+                         Z
+                         ">
+        </animate>
+      </path>
+</svg>

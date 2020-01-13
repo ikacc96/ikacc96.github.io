@@ -2,4 +2,4 @@
 
 ### Navigate ###
 
-Function Page Link: [`html/custom/function.html`](https://ikacc96.github.io/html/custom/function.html)
+Function Page Link: [`html/custom/function.html`](https://ikacc96.github.io/html/custom/baseFunction.html)
