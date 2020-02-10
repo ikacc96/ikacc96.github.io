@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Problems" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card-/-Problem" transform="translate(-90.000000, 0.000000)">
+            <g id="card">
+                <g id="Group" transform="translate(90.000000, 0.000000)">
+                    <circle id="Image" fill="#EFEFF2" cx="80" cy="80" r="80"></circle>
+                    <g id="image" opacity="0.3" transform="translate(8.000000, 8.500000)" fill="#D8D8D8" stroke="#979797" stroke-width="3">
+                        <circle id="Oval" cx="71.5" cy="71.5" r="70"></circle>
+                        <circle id="Oval" cx="71.5" cy="71.5" r="44"></circle>
+                        <circle id="Oval" cx="9.25" cy="102.75" r="7.75"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

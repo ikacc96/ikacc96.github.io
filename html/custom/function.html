@@ -33,8 +33,9 @@
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md" data-header-fix-moment="500"
-    data-header-fix-effect="slide">
+  <header id="header"
+    class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md u-header--change-logo-md"
+    data-header-fix-moment="500" data-header-fix-effect="slide">
     <div class="u-header__section">
       <!-- Topbar -->
       <div class="container u-header__hide-content pt-2">
@@ -249,14 +250,14 @@
       </div>
 
       <!-- SVG Background -->
-      <img class="position-absolute right-0 bottom-0 left-0" style="width: 100%; height: fit-content;"
-        src="../../assets/svg/components/wave-1-bottom-sm.svg" alt="Image Description">
+      <img class="position-absolute bottom-0 left-0" style="width: 100%; height: fit-content;"
+        src="../../assets/svg/components/custom/wave-1-bottom-sm-animation.svg" alt="Image Description">
       <!-- End SVG Background Section -->
     </div>
     <!-- End Hero Section -->
 
     <!-- Mid Level Nav -->
-    <nav id="midNavbar" class="bg-white sticky-top d-none d-sm-block">
+    <nav id="midNavbar" class="bg-white sticky-top d-none d-sm-block py-1">
       <ul class="list-unstyled nav nav-classic nav-borderless justify-content-center">
         <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
         <li class="nav-item"> <a class="nav-link" href="#keyFeatures">Key Features</a></li>
@@ -491,7 +492,6 @@
               <div class="tab-content">
                 <div class="tab-pane fade pt-5 show active" id="pills-one-code-sample-out" role="tabpanel"
                   aria-labelledby="pills-one-code-sample-out-tab">
-
                 </div>
 
                 <div class="tab-pane fade text-white-70 pt-5" id="pills-two-code-sample-out" role="tabpanel"
@@ -572,13 +572,13 @@
               <th scope="col" class="w-20">Free
                 <small class="d-block text-secondary">$0/mo</small>
               </th>
-              <th scope="col" class="w-20 border-left border-right">Standard
+              <th scope="col" class="w-20 border-left">Standard
                 <small class="d-block text-secondary">$500/mo</small>
               </th>
-              <th scope="col" class="w-20">Premium
+              <th scope="col" class="w-20 border-left">Premium
                 <small class="d-block text-secondary">$2,500/mo</small>
               </th>
-              <th scope="col" class="w-20">Enterprise
+              <th scope="col" class="w-20 border-left">Enterprise
                 <small class="d-block text-secondary">POA</small>
               </th>
             </tr>
@@ -587,33 +587,34 @@
             <tr>
               <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">No. of Calls</th>
               <td class="text-center text-secondary p-3">500</td>
-              <td class="text-center text-secondary border-left border-right p-3">50,000</td>
-              <td class="text-center text-secondary border-left border-right p-3">500,000</td>
-              <td class="text-center text-secondary p-3">Unlimited</td>
+              <td class="text-center text-secondary border-left p-3">50,000</td>
+              <td class="text-center text-secondary border-left p-3">500,000</td>
+              <td class="text-center text-secondary border-left p-3">Unlimited</td>
             </tr>
             <tr>
               <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">Additional Call Cost</th>
               <td class="text-center text-secondary p-3">500</td>
-              <td class="text-center text-secondary border-left border-right p-3">50,000</td>
-              <td class="text-center text-secondary border-left border-right p-3">500,000</td>
-              <td class="text-center text-secondary p-3"></td>
+              <td class="text-center text-secondary border-left p-3">50,000</td>
+              <td class="text-center text-secondary border-left p-3">500,000</td>
+              <td class="text-center text-secondary border-left p-3"></td>
             </tr>
             <tr>
               <th scope="row" class="font-size-1 font-weight-normal py-3 px-4">Documents</th>
               <td class="text-center text-secondary p-3">≈ 1</td>
-              <td class="text-center text-secondary border-left border-right p-3">≈ 100</td>
-              <td class="text-center text-secondary border-left border-right p-3">≈ 1,000</td>
-              <td class="text-center text-secondary p-3">1,000+</td>
+              <td class="text-center text-secondary border-left p-3">≈ 100</td>
+              <td class="text-center text-secondary border-left p-3">≈ 1,000</td>
+              <td class="text-center text-secondary border-left p-3">1,000+</td>
             </tr>
 
             <tr>
               <th scope="row" class="bg-white p-3"></th>
-              <td colspan="3" class="bg-white text-center border-right p-3">
-                <button type="button" class="btn btn-block btn-soft-indigo transition-3d-hover">Start Free
-                  Trial</button>
+              <td colspan="3" class="bg-white text-center p-3">
+                <a role="button" class="btn btn-block btn-soft-indigo transition-3d-hover" href="www.accrete.ai">Start
+                  Free
+                  Trial</a>
               </td>
-              <td class="bg-white text-center p-3">
-                <button type="button" class="btn btn-block btn-primary transition-3d-hover">Contact Us</button>
+              <td class="bg-white text-center text-white p-3 border-left">
+                <a role="button" class="btn btn-block btn-primary transition-3d-hover" href="#">Contact Us</a>
               </td>
             </tr>
           </tbody>
@@ -802,7 +803,7 @@
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
-  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <!-- <script src="../../assets/js/components/hs.fancybox.js"></script> -->
   <script src="../../assets/js/components/hs.validation.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
   <script src="../../assets/js/custom/custom-scroll.js"></script>
