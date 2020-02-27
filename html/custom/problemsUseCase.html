@@ -29,27 +29,6 @@
     body {
       scroll-behavior: smooth;
     }
-
-    /* Animate Featured Image */
-
-    #featuredImg {
-      object-fit: cover;
-      object-position: top;
-      animation: 5s ease-in-out alternate infinite scrollDown;
-    }
-
-    @keyframes scrollDown {
-
-      0%,
-      10% {
-        object-position: top;
-      }
-
-      90%,
-      100% {
-        object-position: bottom;
-      }
-    }
   </style>
 </head>
 
@@ -215,14 +194,12 @@
     <!-- Hero Section -->
     <section id="problemsHero">
       <div class="container space-3 space-top-md-2">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 class="mt-md-8 mb-4 pt-lg-8">How we Measure Sentiment Contextually </h1>
+        <div class="row align-items-center mt-md-8 pt-lg-8">
+          <div class="col-md-6 mb-4 text-center text-md-left">
+            <h1>How we Measure Sentiment Contextually </h1>
           </div>
           <div class="col-md-6">
-            <video loop muted autoplay playsinline width="100%">
-              <source src="./../../assets/media/custom/dataDashboard.mp4" type="video/mp4">
-            </video>
+            <img class="img-fluid" src="./../../assets/img/custom/productLaptop.png" alt="Laptop Mockup">
           </div>
         </div>
       </div>
@@ -231,7 +208,7 @@
 
     <!-- Problem Section -->
     <section id="problem">
-      <div class="container space-2 space-lg-3">
+      <div class="container space-2 ">
         <!-- Title -->
         <div class="w-lg-60">
           <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Problem</span>
@@ -239,13 +216,7 @@
         </div>
         <!-- End Title -->
         <div class="row justify-content-between">
-          <div class="col-md-5 text-justify">
-            <p class="lead">Continuously monitor vast volumes of dynamically changing language around key
-              topics and
-              spot anomalies in topical sentiment. Identifying shifts in topical sentiment can help surface important
-              narratives and trends.</p>
-          </div>
-          <div class="col-md-7 text-justify">
+          <div class="col-md-8 text-justify">
             <p class="text-dark">The scale of raw data on any single topic is vast, making it impossible for industry
               specialists to
               efficiently keep track of key information and identify crucial developments early. Historically
@@ -255,7 +226,9 @@
               expand their coverage or depth of understanding. Experts are missing out on executing deep analysis at
               scale and are unaware of how ‘obscure’ shifts in nuance and changes in language can have a significant
               impact on their own operations and revenue growth.</p>
-
+          </div>
+          <div class="col-md-3 mt-5 mt-md-0 text-center">
+            <img class="img-fluid" src="./../../assets/img/custom/questionHex.png" alt="">
           </div>
         </div>
       </div>
@@ -264,16 +237,16 @@
 
     <!-- Solution Section -->
     <section id="solution" class="bg-light">
-      <div class="container space-2 space-lg-3">
+      <div class="container space-2 ">
         <!-- Title -->
         <div class="w-lg-60">
           <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Solution</span>
           <!-- <h4 class="text-lh-md">Unlocking Tacit Knowledge</h4> -->
         </div>
         <!-- End Title -->
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <p class="text-dark text-justify">Accrete has developed the ability for machines to understand contextual
+        <div class="row justify-content-between">
+          <div class="col-md-8 text-justify">
+            <p class="text-dark">Accrete has developed the ability for machines to understand contextual
               sentiment and
               relevance within a specific domain. By specializing our AI, it can understand industry-specific language,
               accurately extract metadata, and categorize language into key topics. This means we can score language
@@ -286,8 +259,10 @@
               competitors.</p>
             <!-- <a href="#">Speak to an expert<i class="fas fa-angle-right ml-1"></i></a> -->
           </div>
-          <div class="col-md-7">
-
+          <div class="col-md-3 mt-5 mt-md-0 text-center">
+            <video muted playsinline width="100%" style="max-width: 400px;">
+              <source src="./../../assets/media/custom/questionHexLight.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
@@ -350,17 +325,6 @@
                 </div>
               </li>
               <!-- End Info -->
-
-              <!-- Info -->
-              <li class="media u-indicator-vertical-dashed-item">
-                <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                  <span class="fas fa-check btn-icon__inner"></span>
-                </span>
-                <div class="media-body mt-n1 mb-5">
-                  <h5>Uncover hidden nuance for high-value insights</h5>
-                </div>
-              </li>
-              <!-- End Info -->
             </ul>
           </div>
           <div class="col-md-6">
@@ -409,16 +373,6 @@
               </li>
               <!-- End Info -->
 
-              <!-- Info -->
-              <li class="media u-indicator-vertical-dashed-item">
-                <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                  <span class="fas fa-check btn-icon__inner"></span>
-                </span>
-                <div class="media-body mt-n1 mb-5">
-                  <h5>Semantically search for relevant information</h5>
-                </div>
-              </li>
-              <!-- End Info -->
             </ul>
           </div>
         </div>
@@ -445,8 +399,8 @@
               <button type="button" class="btn btn-link pl-0">Learn More<i class="fas fa-angle-right ml-1"></i></button>
             </div>
             <div class="col-md-7 mt-5 mt-md-0">
-              <img id="featuredImg" class="rounded" width="100%" height="400px"
-                src="./../../assets/img/custom/featuredProduct.jpg" alt="TD">
+              <img id="featuredImg" class="rounded img-fluid" src="./../../assets/img/custom/productTablet.png"
+                alt="TD">
             </div>
           </div>
         </a>
@@ -707,6 +661,29 @@
   <!-- <script src="../../assets/js/custom/custom-scroll.js"></script> -->
 
   <!-- JS Custom -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+  <script>
+    // video element
+    var vidAnim = document.querySelector('#solution video');
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scenes
+    new ScrollMagic.Scene({
+      triggerElement: "#solution video",
+      duration: "60%",
+      offset: -100
+    })
+      .setClassToggle("#solution video", "animated")
+      // .addIndicators()
+      .on("enter", function () {
+        vidAnim.play();
+      })
+      .addTo(controller);
+
+  </script>
 
 
   <!-- JS Plugins Init. -->
