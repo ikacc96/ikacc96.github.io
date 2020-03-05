@@ -1,0 +1,198 @@
+<svg viewBox="0 0 550 450" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFF" d="M0 0h550v450H0z"/>
+    <g class="TK">
+    <g class="item" transform="translate(423.5 353)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="98" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="49" y="16.5">Observations</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(355.5 353)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="62" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="31" y="16.5">Practice</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(274.5 353)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="75" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="37.5" y="16.5">Education</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(461.5 320)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="60" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="30" y="16.5">Attitude</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(294.5 320)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="161" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="80.5" y="16.5">Hard to Communicate</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(457.5 287)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="64" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="32" y="16.5">Strategy</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(371.5 287)">
+      <rect fill="#EFEFF2" y=".5" width="81" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="40.5" y="16.5">Experience</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(252.5 320)">
+      <rect fill="#EFEFF2" y=".5" width="37" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="18.5" y="16.5">Skills</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(323.5 287)">
+      <rect fill="#EFEFF2" y=".5" width="43" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="21.5" y="16.5">Ideas</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(267.5 287)">
+      <rect fill="#EFEFF2" y=".5" width="51" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="25.5" y="16.5">Values</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(442.5 254)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="79" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="38.5" y="16.5">Know-how</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(283.5 254)">
+      <rect fill="#EFEFF2" y=".5" width="154" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="77" y="16.5">Impossible to Convey</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(454.5 221)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="67" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="33.5" y="16.5">Expertise</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(389.5 221)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="59" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="29.5" y="16.5">Nuance</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(313.5 221)">
+      <rect fill="#EFEFF2" y=".5" width="71" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="35.5" y="16.5">Semantic</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(440.5 188)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="81" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="40.5" y="16.5">Contextual</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(367.5 188)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="67" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="33.5" y="16.5">Dynamic</tspan>
+      </text>
+    </g>
+    <g class="item" transform="translate(302.5 188)">
+      <rect fill="#EFEFF2" x=".5" y=".5" width="59" height="25" rx="1"/>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+        <tspan x="28.5" y="16.5">Intuitive</tspan>
+      </text>
+    </g>
+    <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="16" fill="#77838F" transform="translate(252.5 153)">
+      <tspan x="137.024" y="17">Tacit Knowledge</tspan>
+    </text>
+    </g>
+    <path d="M522.02 139H20" stroke="#B9DAF5" stroke-linecap="square" stroke-dasharray="5"/>
+    <g class="EK">
+      <g class="item" transform="translate(411 109)">
+        <rect fill="#EFEFF2" y=".5" width="111" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="55.5" y="16.5">Easy to Convey</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(343 109)">
+        <rect fill="#EFEFF2" y=".5" width="63" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="31.5" y="16.5">Codified</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(294 109)">
+        <rect fill="#EFEFF2" y=".5" width="44" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="22" y="16.5">Static</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(475 79)">
+        <rect fill="#EFEFF2" x=".5" y=".5" width="46" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="23" y="16.5">Literal</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(367 79)">
+        <rect fill="#EFEFF2" y=".5" width="103" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="51.5" y="16.5">Unambiguous</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(288 79)">
+        <rect fill="#EFEFF2" y=".5" width="74" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="37" y="16.5">Formulaic</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(433 49)">
+        <rect fill="#EFEFF2" x=".5" y=".5" width="88" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="44" y="16.5">Rules Based</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(366 49)">
+        <rect fill="#EFEFF2" x=".5" y=".5" width="61" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="30.5" y="16.5">Records</tspan>
+        </text>
+      </g>
+      <g class="item" transform="translate(279 49)">
+        <rect fill="#EFEFF2" x=".5" y=".5" width="81" height="22" rx="1"/>
+        <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#77838F" text-anchor="middle">
+          <tspan x="40.5" y="16.5">Databases</tspan>
+        </text>
+      </g>
+      <text font-family="Poppins, Helvetica, Arial, sans-serif" font-size="16" fill="#77838F" transform="translate(279 13)">
+        <tspan x="93.8" y="17">Explicit Knowledge</tspan>
+      </text>
+    </g>
+    <g>
+      <path d="M156.641387 431.165633l-65.0715663-74.469576c-.1443933-.165248-.2304214-.373404-.2448208-.592376l-2.7579201-41.939818c-.0131667-.200226-.0862646-.391859-.2097909-.549989l-44.4656675-56.921697c-.0547567-.070095-.0999166-.147183-.1342845-.229223l-23.05474546-55.0341847c-.1104056-.2635502-.10279454-.5617414.0209123-.8193161L48.119572 143.567067c.166466-.34660517.5169185-.567067.9014261-.567067H270.71706c.284508 0 .555547.12118677.745252.33321668l3.389985 3.78892447c.097289.10873896.169605.23745087.211872.37710388l16.037503 52.98917447c.099138.3275604.02388.6830697-.199489.9423582L251.283075 247.42096c-.130015.150923-.211993.337238-.235423.535059l-8.324593 70.284181c-.028316.239071-.141928.459903-.319973.621944l-35.059549 31.90809c-.086393.078628-.158342.171785-.212582.275247l-38.708492 73.834968c-.085204.162522-.213485.298467-.370796.392948l-10.142383 6.091509c-.415133.24933-.949262.165381-1.267897-.199273z" fill="#B7BFCB"/>
+      <path fill="#CFDAEA" d="M171.45004 143l-13.115909 117.250784-137.80512-58.6253918L48.3919204 143z"/>
+      <path fill="#C4CADF" d="M157.191964 431.795728l1.142167-87.872499-69.7646396-29.689252 2.777709 42.207307z"/>
+      <path fill="#CCD4E6" d="M158.334131 343.923229v-83.672445l-137.80512-58.6253918 23.2801082 54.9611718 44.7603722 57.647413z"/>
+      <path fill="#A1ADCB" d="M157.191964 431.795728l11.100225-6.666788 38.920755-74.239852-48.878813 3.950043z"/>
+      <path fill="#AFBBD5" d="M207.212944 350.889088l35.466209-32.278196 8.404446-70.958379-92.749468 12.598271v94.588347z"/>
+      <path fill="#A4B5D3" d="M251.083599 247.652513l40.177268-46.0271208-132.926736 58.6253918z"/>
+      <path fill="#C1CEE5" d="M291.260867 201.6253922L275 147.28722653 271.008539 143h-37.237038l-4.857802 85.8750905z"/>
+      <path fill="#CCD7EB" d="M228.913699 228.8750905L233.771501 143H171.45004l-13.115909 117.250784z"/>
+      <path d="M156.641387 431.165633l-65.0715663-74.469576c-.1443933-.165248-.2304214-.373404-.2448208-.592376l-2.7579201-41.939818c-.0131667-.200226-.0862646-.391859-.2097909-.549989l-44.4656675-56.921697c-.0547567-.070095-.0999166-.147183-.1342845-.229223l-23.05474546-55.0341847c-.1104056-.2635502-.10279454-.5617414.0209123-.8193161L48.119572 143.567067c.166466-.34660517.5169185-.567067.9014261-.567067H270.71706c.284508 0 .555547.12118677.745252.33321668l3.389985 3.78892447c.097289.10873896.169605.23745087.211872.37710388l16.037503 52.98917447c.099138.3275604.02388.6830697-.199489.9423582L251.283075 247.42096c-.130015.150923-.211993.337238-.235423.535059l-8.324593 70.284181c-.028316.239071-.141928.459903-.319973.621944l-35.059549 31.90809c-.086393.078628-.158342.171785-.212582.275247l-38.708492 73.834968c-.085204.162522-.213485.298467-.370796.392948l-10.142383 6.091509c-.415133.24933-.949262.165381-1.267897-.199273z" class="coverTK" fill-opacity=".65" fill="#A4A9B4"/>
+    </g>
+    <g>
+      <path d="M52.48271385 134.5667437l14.19381865-29.526377c.2392806-.4977582.8367687-.7072957 1.3345269-.4680151.1958873.0941663.3557624.2495891.4554223.4427395l10.6483975 20.6376229c.25324.4908034.8564063.6833867 1.3472097.4301467.1447521-.0746878.2690689-.1836043.3621411-.3172793l59.5867397-85.5815564c.2730101-.39211118.7852637-.5363159 1.2227361-.34421293l5.7098007 2.50728876a1.00000106 1.00000106 0 01.2663848.17185315L168.187327 61.0127938c.069564.0625205.130014.1344913.17958.2138082l35.169025 56.2776066c.247529.3960975.736286.5680832 1.177317.4142788l32.845667-11.4545463c.380932-.1328456.80438-.0237817 1.073742.2765541l24.746197 27.5918293c.368747.4111499.334373 1.0433811-.076777 1.4121279-.183466.1645445-.421231.2555472-.667675.2555472H53.38398481c-.55228475 0-1-.4477153-1-1 0-.1499954.03374266-.2980694.09872904-.4332559z" fill="#E8F6F9"/>
+      <path fill="#D1D9E5" d="M233.771501 135.9999996l4.416396-29.7554086 26.686641 29.7554086z"/>
+      <path fill="#E8F6F9" d="M233.771501 135.9999996H51.793724l15.7524172-32.7686172 12.3297517 23.8962496 61.0049255-87.618428 4.0692242 5.43874652 3.9914118 28.96461258-26.7504881 47.2097322 54.1691597-17.8909129-18.025995 23.8962496 79.853766-20.883041z"/>
+      <path fill="#D1D9E5" d="M202.019261 115.5897668L168.29219 61.1070383l-20.801697-18.69539274-6.6096746-2.90244156 4.1099923 6.08923914 3.9506437 28.31411996 27.4186716 29.3188193-2.135931 19.6844512z"/>
+      <path fill="#E4EFF5" d="M174.224195 122.9158336l2.135931-19.6844512-18.025995 23.8962496zM176.360126 103.2313824l-27.4186716-29.3188193-26.7504881 47.2097322z"/>
+      <path d="M52.48271385 134.5667437l14.19381865-29.526377c.2392806-.4977582.8367687-.7072957 1.3345269-.4680151.1958873.0941663.3557624.2495891.4554223.4427395l10.6483975 20.6376229c.25324.4908034.8564063.6833867 1.3472097.4301467.1447521-.0746878.2690689-.1836043.3621411-.3172793l59.5867397-85.5815564c.2730101-.39211118.7852637-.5363159 1.2227361-.34421293l5.7098007 2.50728876a1.00000106 1.00000106 0 01.2663848.17185315L168.187327 61.0127938c.069564.0625205.130014.1344913.17958.2138082l35.169025 56.2776066c.247529.3960975.736286.5680832 1.177317.4142788l32.845667-11.4545463c.380932-.1328456.80438-.0237817 1.073742.2765541l24.746197 27.5918293c.368747.4111499.334373 1.0433811-.076777 1.4121279-.183466.1645445-.421231.2555472-.667675.2555472H53.38398481c-.55228475 0-1-.4477153-1-1 0-.1499954.03374266-.2980694.09872904-.4332559z" class="coverEK" fill-opacity=".65" fill="#C1C5CC"/>
+    </g>
+  </g>
+</svg>
