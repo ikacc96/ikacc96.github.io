@@ -17,8 +17,8 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
@@ -41,6 +41,18 @@
     min-height: 7rem;
   }
 
+  .hero-video .overlay-text {
+    display: inline-block;
+    position: absolute;
+    bottom: -17em;
+    right: 0;
+    z-index: 10;
+    color: #bbbbbb;
+    background-color: rgba(15, 18, 40, 0.3);
+    padding: .5em .3em;
+    border-radius: .2em 0 0 .2em;
+  }
+
   .hero-video video {
     position: absolute;
     top: 300px;
@@ -54,10 +66,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .industry-elem img {
-    filter: invert();
   }
 
   /* Small devices (landscape phones, 576px and up) */
@@ -86,6 +94,10 @@
       margin-bottom: 400px;
     }
 
+    .hero-video .overlay-text {
+      bottom: -22em;
+    }
+
     .hero-video video {
       top: 310px;
       min-height: 350px;
@@ -97,6 +109,7 @@
   @media (min-width: 992px) {
     .hero-video {
       margin-bottom: 0;
+      overflow: hidden;
     }
 
     .hero-video h1 {
@@ -105,6 +118,10 @@
 
     .hero-video p {
       min-height: 5rem;
+    }
+
+    .hero-video .overlay-text {
+      bottom: 1em;
     }
 
     .hero-video video {
@@ -274,17 +291,22 @@
     <main id="content" role="main">
 
       <!-- Hero Section -->
-      <div class="position-relative hero-video space-top-2 space-top-md-3" style="background-color: rgb(15, 18, 40);">
+      <div class="position-relative hero-video space-top-2 space-top-md-3 space-lg-3"
+        style="background-color: rgb(15, 18, 40);">
+        <small class="overlay-text">Accrete’s Viral Influence Knowledge Function</small>
         <video autoplay playsinline loop muted>
           <source src="../../assets/media/custom/vibeViz.mp4" type="video/mp4">
         </video>
-        <div class="container pb-5">
+        <div class="container pb-5 pt-lg-5">
           <div class="col-lg-6 mb-5">
             <!-- Title -->
             <div class="mb-3">
-              <h1 class="display-4 text-light mb-0">Scale your tacit knowledge</h1>
+              <h1 class="display-4 text-light mb-0" data-aos="fade-up" data-aos-delay="50" data-aos-duration="700">
+                Scale your tacit
+                knowledge</h1>
             </div>
-            <p class="text-white">Accrete teaches machines how to read, understand and learn at scale. We boost
+            <p class="text-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Accrete teaches
+              machines how to read, understand and learn at scale. We boost
               analytical productivity across a variety of industries including finance, music, government and more.</p>
             <!-- End Title -->
             <div class=" d-flex align-items-center flex-wrap">
@@ -311,6 +333,7 @@
                 make accurate predictions about <span class="text-primary">
                   <strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong>
                 </span></p>
+              <!-- <span class="text-primary"><strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong></span> -->
               <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
             </div>
             <div id="challenge-img" class="col-md-5">
@@ -323,7 +346,7 @@
       <!-- End Problems Section -->
 
       <!-- Approach Section -->
-      <section id="approach" class="bg-light">
+      <section id="approach" class="">
         <div class="container space-2 space-lg-3">
           <!-- Title -->
           <div class="w-lg-60">
@@ -339,9 +362,8 @@
             </div>
             <div id="challenge-img" class="col-12">
               <img src="" alt="">
-              <video autoplay playsinline loop muted width="100%"
-                poster="./../../assets/media/custom/approachAnimation.png">
-                <source src="" type="video/mp4"></video>
+              <video autoplay playsinline loop muted width="100%">
+                <source src="./../../assets/media/custom/approachAnimation.mp4" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -694,7 +716,9 @@
     <!-- <script src="../../assets/js/components/hs.slick-carousel.js"></script> -->
     <!-- <script src="../../assets/js/components/hs.show-animation.js"></script> -->
     <!-- <script src="../../assets/js/components/hs.svg-injector.js"></script> -->
-    <!-- <script src="../../assets/js/components/hs.go-to.js"></script> -->
+    <script src="../../assets/js/components/hs.go-to.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
@@ -718,6 +742,14 @@
           backSpeed: 15,
           backDelay: 1500
         });
+
+        // initialize AOS
+        AOS.init();
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+
+
       });
 
     </script>
