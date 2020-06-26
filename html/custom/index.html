@@ -18,6 +18,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS Front Template -->
@@ -29,37 +30,6 @@
     scroll-behavior: smooth;
   }
 
-  .hero-video {
-    margin-bottom: 250px;
-  }
-
-  .hero-video h1 {
-    font-size: 2rem;
-  }
-
-  .hero-video p {
-    min-height: 7rem;
-  }
-
-  .hero-video .overlay-text {
-    display: inline-block;
-    position: absolute;
-    bottom: -17em;
-    right: 0;
-    z-index: 10;
-    color: #bbbbbb;
-    background-color: rgba(15, 18, 40, 0.3);
-    padding: .5em .3em;
-    border-radius: .2em 0 0 .2em;
-  }
-
-  .hero-video video {
-    position: absolute;
-    top: 300px;
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-  }
 
   .industry-elem {
     position: absolute;
@@ -69,72 +39,21 @@
   }
 
   /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
-    .hero-video {
-      margin-bottom: 250px;
-    }
-
-    .hero-video h1 {
-      font-size: 3rem;
-    }
-
-    .hero-video p {
-      min-height: 5rem;
-    }
-
-    .hero-video video {
-      top: 310px;
-    }
-  }
+  @media (min-width: 576px) {}
 
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    .hero-video {
-      margin-bottom: 400px;
-    }
-
-    .hero-video .overlay-text {
-      bottom: -22em;
-    }
-
-    .hero-video video {
-      top: 310px;
-      min-height: 350px;
+    #mainCanvas {
+      top: 100px;
+      position: sticky;
+      z-index: 1;
     }
   }
 
 
   /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .hero-video {
-      margin-bottom: 0;
-      overflow: hidden;
-    }
-
-    .hero-video h1 {
-      font-size: 3.5rem;
-    }
-
-    .hero-video p {
-      min-height: 5rem;
-    }
-
-    .hero-video .overlay-text {
-      bottom: 1em;
-    }
-
-    .hero-video video {
-      position: absolute;
-      right: -50px;
-      top: auto;
-      bottom: 0;
-      width: auto;
-      height: 100%;
-      min-height: auto;
-    }
-
-  }
+  @media (min-width: 992px) {}
 </style>
 
 <body>
@@ -289,61 +208,76 @@
 
     <!-- ========== MAIN ========== -->
     <main id="content" role="main">
-
       <!-- Hero Section -->
-      <div class="position-relative hero-video space-top-2 space-top-md-3 space-lg-3"
-        style="background-color: rgb(15, 18, 40);">
-        <small class="overlay-text">Accrete’s Viral Influence Knowledge Function</small>
-        <video autoplay playsinline loop muted>
-          <source src="../../assets/media/custom/vibeViz.mp4" type="video/mp4">
-        </video>
-        <div class="container pb-5 pt-lg-5">
-          <div class="col-lg-6 mb-5">
-            <!-- Title -->
-            <div class="mb-3">
-              <h1 class="display-4 text-light mb-0" data-aos="fade-up" data-aos-delay="50" data-aos-duration="700">
-                Scale your tacit
-                knowledge</h1>
-            </div>
-            <p class="text-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Accrete teaches
-              machines how to read, understand and learn at scale. We boost
-              analytical productivity across a variety of industries including finance, music, government and more.</p>
-            <!-- End Title -->
-            <div class=" d-flex align-items-center flex-wrap">
-              <a class="btn btn-soft-secondary rounded-circle transition-3d-hover" href="#complexityProblem"><i
-                  class="fas fa-angle-double-down p-1"></i></a>
+      <div class="container position-relative space-top-2 space-top-md-3 space-top-lg-3">
+        <div class="row">
+          <!-- Info Sections -->
+          <div id="graphic" class="col-md-5">
+            <div id="sections">
+              <section class="step space-top-2 space-bottom-3">
+                <div>
+                  <h1 class="display-4 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="700">Building
+                    the
+                    future of work</h1>
+                  <p class="text-dark">Accrete captures and scales an organization’s tacit
+                    knowledge to solve information complexity problems.
+                    Allowing an organizations most valuable resource <strong class="text-primary">expert intuition,
+                      experience and
+                      insight</strong> to be applied
+                    at scale to dynamic, complex problems and decisionmaking
+                    processes.</p>
+                  <a class="btn btn-soft-secondary rounded-circle transition-3d-hover mt-4" href="#complexityProblem"><i
+                      class="fas fa-angle-double-down p-1"></i></a>
+                </div>
+              </section>
+              <section id="complexityProblem" class="step space-top-5 space-bottom-3">
+                <div>
+                  <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span>
+                  <h4 class="text-lh-md">We Solve Information Complexity Problems</h4>
+                  <p class="text-dark" style="min-height: 7em;">Accrete’s proprietary dynamic learning technologies
+                    capture
+                    and scale tacit human knowledge to make accurate predictions about <span class="text-primary">
+                      <strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong>
+                    </span></p>
+                  <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
+                </div>
+              </section>
             </div>
           </div>
+          <!-- End Info Sections -->
+          <!-- Visualization -->
+          <div id="vis" class="col-md-7 space-1">
+            <canvas id="mainCanvas"></canvas>
+          </div>
+          <!-- End Visualization -->
         </div>
       </div>
       <!-- End Hero Section -->
 
-      <!-- Problems Section -->
-      <section id="complexityProblem">
+      <!-- Scale Section -->
+      <section id="scaleExpertise">
         <div class="container space-3">
-          <!-- Title -->
-          <div class="w-lg-60">
-            <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span>
-            <h4 class="text-lh-md">We Solve Information Complexity Problems</h4>
-          </div>
-          <!-- End Title -->
-          <div class="row justify-content-between">
+          <div class="row align-items-center">
             <div class="col-md-5">
-              <p class="text-dark" style="min-height: 7em;">We automate analytical tasks to scale human expertise and
-                make accurate predictions about <span class="text-primary">
-                  <strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong>
-                </span></p>
-              <!-- <span class="text-primary"><strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong></span> -->
-              <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
+              <div>
+                <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span>
+                <h4 class="text-lh-md">We Solve Information Complexity Problems</h4>
+                <p class="text-dark" style="min-height: 7em;">Accrete’s proprietary dynamic learning technologies
+                  capture
+                  and scale tacit human knowledge to make accurate predictions about <span class="text-primary">
+                    <strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong>
+                  </span></p>
+                <!-- <span class="text-primary"><strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong></span> -->
+                <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
+              </div>
             </div>
-            <div id="challenge-img" class="col-md-5">
-              <video autoplay playsinline loop muted width="100%">
-                <source src="./../../assets/media/custom/dataDashboard.mp4" type="video/mp4"></video>
+            <div id="challenge-img" class="col-md-7">
+              <img class="img-fluid" src="./../../assets/img/custom/tempExpertise.png" alt="static">
             </div>
           </div>
         </div>
       </section>
-      <!-- End Problems Section -->
+      <!-- End Scale Section -->
 
       <!-- Approach Section -->
       <section id="approach" class="">
@@ -356,8 +290,9 @@
           <!-- End Title -->
           <div class="row justify-content-between">
             <div class="col-md-7">
-              <p class="text-dark">Accrete builds products that capture and scale tacit
-                knowledge. We automate analytical tasks and amplify your best domain-experts.<a class="ml-2"
+              <p class="text-dark">Using latent mathematical representations of tacit human knowledge we seed
+                self-learning models. Our models dynamically recalibrate neural architectures on the fly with minimal
+                human feedback. The result is greater accuracy and more valuable predictive insight.<a class="ml-2"
                   href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a></p>
             </div>
             <div id="challenge-img" class="col-12">
@@ -493,44 +428,119 @@
       </section>
       <!-- End Industries Section -->
 
-      <!-- Blog Card Section -->
-      <section class="container space-1">
-        <div class="card-deck d-block d-md-flex card-md-gutters-3 justify-content-around">
-          <!-- Blog Card -->
-          <div class="col-lg-4 my-5 my-lg-0">
-            <article class="card border-0 shadow-sm transition-3d-hover">
-              <div class="card-body p-6">
-                <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
-                  <span class="far fa-copy font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
-                </span>
-                <small class="d-block text-primary text-uppercase mb-1">Strategy</small>
-                <h5>Big Data and AI Strategies</h5>
-                <p class="mb-3">Does earnings call sentiment contain dividend signals?</p>
-                <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="#">Read Now</a>
-              </div>
-            </article>
+      <!-- Grid Carousel Section -->
+      <section id="carousel">
+        <div class="container space-1 space-lg-2">
+          <!-- Title -->
+          <div class="w-lg-60">
+            <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Learn More</span>
+            <h4 class="text-lh-md"><br></h4>
           </div>
-          <!-- End Blog Card -->
+          <!-- End Title -->
+          <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-2" data-slides-show="4"
+            data-infinite="true" data-autoplay="true" data-autoplay-speed="4000"
+            data-arrows-classes="u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+            data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4 text-white-50"
+            data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4 bg-soft-dark"
+            data-responsive='[{
+              "breakpoint": 992,
+              "settings": {
+              "slidesToShow": 3
+              }
+              }, {
+              "breakpoint": 768,
+              "settings": {
+              "slidesToShow": 2
+              }
+              }, {
+              "breakpoint": 554,
+              "settings": {
+              "slidesToShow": 1
+              }
+              }]'>
 
-          <!-- Blog Card -->
-          <div class="col-lg-4 my-5 my-lg-0">
-            <article class="card border-0 shadow-sm transition-3d-hover">
-              <div class="card-body p-6">
-                <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
-                  <span class="far fa-file-alt font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
-                </span>
-                <small class="d-block text-primary text-uppercase mb-1">Features</small>
-                <h5>M&A Research Paper</h5>
-                <p class="mb-3">An Analysis on the Alpha Signals in Low-Popularity Chatter Sources</p>
-                <a class="btn btn-sm btn-soft-primary btn-pill transition-3d-hover" href="#">Read Now</a>
-              </div>
-            </article>
+            <!-- Blog Card -->
+            <div class="js-slide my-2">
+              <article class="card w-100">
+                <div class="card-body">
+                  <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
+                    <span class="far fa-copy font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                  </span>
+                  <small class="d-block text-primary text-uppercase mb-1">Strategy</small>
+                  <h5>Big Data and AI Strategies</h5>
+                  <p>Does earnings call sentiment contain dividend signals?</p>
+                </div>
+                <a href="#" class="card-footer border-0">Read More<i class="fas fa-angle-right ml-1"
+                    aria-hidden="true"></i></a>
+              </article>
+            </div>
+            <!-- End Blog Card -->
+            <!-- Blog Card -->
+            <div class="js-slide my-2">
+              <article class="card w-100">
+                <div class="card-body">
+                  <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
+                    <span class="far fa-file-alt font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                  </span>
+                  <small class="d-block text-primary text-uppercase mb-1">Features</small>
+                  <h5>M&A Research Paper</h5>
+                  <p>An Analysis on the Alpha Signals in Low-Popularity Chatter Sources</p>
+                </div>
+                <a href="#" class="card-footer border-0">Read More<i class="fas fa-angle-right ml-1"
+                    aria-hidden="true"></i></a>
+              </article>
+            </div>
+            <!-- End Blog Card -->
+            <!-- Blog Card -->
+            <div class="js-slide my-2">
+              <article class="card w-100">
+                <div class="card-body">
+                  <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
+                    <span class="far fa-file-alt font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                  </span>
+                  <small class="d-block text-primary text-uppercase mb-1">Features</small>
+                  <h5>M&A Research Paper</h5>
+                  <p>An Analysis on the Alpha Signals in Low-Popularity Chatter Sources</p>
+                </div>
+                <a href="#" class="card-footer border-0">Read More<i class="fas fa-angle-right ml-1"
+                    aria-hidden="true"></i></a>
+              </article>
+            </div>
+            <!-- End Blog Card -->
+            <!-- Blog Card -->
+            <div class="js-slide my-2">
+              <article class="card w-100">
+                <div class="card-body">
+                  <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
+                    <span class="far fa-copy font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                  </span>
+                  <small class="d-block text-primary text-uppercase mb-1">Strategy</small>
+                  <h5>Big Data and AI Strategies</h5>
+                  <p>Does earnings call sentiment contain dividend signals?</p>
+                </div>
+                <a href="#" class="card-footer border-0">Read More<i class="fas fa-angle-right ml-1"
+                    aria-hidden="true"></i></a>
+              </article>
+            </div>
+            <!-- End Blog Card -->
+            <div class="js-slide my-2">
+              <article class="card w-100">
+                <div class="card-body">
+                  <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mb-6">
+                    <span class="far fa-copy font-size-5 btn-icon__inner btn-icon__inner-bottom-minus"></span>
+                  </span>
+                  <small class="d-block text-primary text-uppercase mb-1">Strategy</small>
+                  <h5>Big Data and AI Strategies</h5>
+                  <p>Does earnings call sentiment contain dividend signals?</p>
+                </div>
+                <a href="#" class="card-footer border-0">Read More<i class="fas fa-angle-right ml-1"
+                    aria-hidden="true"></i></a>
+              </article>
+            </div>
           </div>
-          <!-- End Blog Card -->
-
         </div>
       </section>
-      <!-- End Blog Card Section -->
+      <!-- End Grid Carousel Section -->
 
       <!-- CTA Section -->
       <div class="container space-1 space-lg-2">
@@ -703,7 +713,7 @@
     <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <!-- <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script> -->
     <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
-    <!-- <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script> -->
+    <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
 
     <!-- JS Front -->
     <script src="../../assets/js/hs.core.js"></script>
@@ -713,12 +723,16 @@
     <!-- <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script> -->
     <!-- <script src="../../assets/js/components/hs.validation.js"></script> -->
     <!-- <script src="../../assets/js/components/hs.fancybox.js"></script> -->
-    <!-- <script src="../../assets/js/components/hs.slick-carousel.js"></script> -->
+    <script src="../../assets/js/components/hs.slick-carousel.js"></script>
     <!-- <script src="../../assets/js/components/hs.show-animation.js"></script> -->
     <!-- <script src="../../assets/js/components/hs.svg-injector.js"></script> -->
     <script src="../../assets/js/components/hs.go-to.js"></script>
 
+    <!-- JS Extra -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../assets/js/d3.js"></script>
+    <script src="../../assets/js/custom/scroller.js"></script>
+    <script src="../../assets/js/custom/knowledgeAnimation.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
@@ -746,9 +760,11 @@
         // initialize AOS
         AOS.init();
 
+        // initialization of slick carousel
+        $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
         // initialization of go to
         $.HSCore.components.HSGoTo.init('.js-go-to');
-
 
       });
 
