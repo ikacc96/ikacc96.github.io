@@ -7,26 +7,53 @@ const ctx = mainCanvas.getContext('2d');
 const margin = {left: 30, top: 30, bottom: 30, right: 30};
 let width;
 let height = 600;
+let device;
+// Sim
+let r, space, stick;
 
 const innerDimensions = () => {
-  let computedStyle = getComputedStyle(container);
-  width = container.clientWidth;
-  width -= parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+    let computedStyle = getComputedStyle(container);
+    const vWidth = container.clientWidth;
+    width = vWidth;
+    width -= parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
 
-  mainCanvas.width = width * devicePixelRatio;
-  mainCanvas.height = height * devicePixelRatio;
+    mainCanvas.width = width * devicePixelRatio;
+    mainCanvas.height = height * devicePixelRatio;
 
-  ctx.scale(devicePixelRatio, devicePixelRatio);
+    ctx.scale(devicePixelRatio, devicePixelRatio);
 
-  mainCanvas.style.width = `${width}px`;
-  mainCanvas.style.height = `${height}px`;
+    mainCanvas.style.width = `${width}px`;
+    mainCanvas.style.height = `${height}px`;
 
-  if (set === 1) {
+    const sD = window.matchMedia('(max-width: 768px)').matches;
+    const mD = window.matchMedia('(max-width: 992px)').matches;
+
+    if (sD) {
+        device = 'sm'
+        r = 2.5;
+        space = 1;
+        stick = -4;
+    } else if (mD) {
+        device = 'md'
+        r = 2;
+        space = 1;
+        stick = -3;
+    } else {
+        device = 'lg'
+        r = 3;
+        space = 1;
+        stick = -5;
+    }
+
+    if (set === 1) {
         simulation
+            .force('charge', d3.forceManyBody()
+                .strength(stick))
+            .force('collide', d3.forceCollide(r+space))
             .force("center", d3.forceCenter(width / 2, height / 2))
             .restart();
 
-        update()
+        update();
     }
 
 }
@@ -47,17 +74,16 @@ d3.json('../../assets/js/custom/nodeGraph.json')
     });
 
 // Set up
-const r = 4;
-let simulation = d3.forceSimulation()
+let simulation = d3.forceSimulation();
 let set = 0;
 function setUp () {
 
     simulation
         .force('x', d3.forceX(width/2))
         .force('y', d3.forceY(height/2))
-        .force('collide', d3.forceCollide(r+2))
+        .force('collide', d3.forceCollide(r+space))
         .force('charge', d3.forceManyBody()
-            .strength(-10))
+                .strength(stick))
         .force('link', d3.forceLink()
             .id(function(d) {return d.id}))
             // .distance())
