@@ -36,13 +36,13 @@ const innerDimensions = () => {
     } else if (mD) {
         device = 'md'
         r = 2;
-        space = 1;
-        stick = -3;
+        space = 0;
+        stick = -3.5;
     } else {
         device = 'lg'
-        r = 3;
-        space = 1;
-        stick = -5;
+        r = 2.5;
+        space = 0.5;
+        stick = -8;
     }
 
     if (set === 1) {
@@ -95,6 +95,9 @@ function setUp () {
             .on("tick", update);
 
     set = 1;
+
+    // Trigger automatically
+    setTimeout(draw1, 7000);
 }
 
 // Update
@@ -115,10 +118,10 @@ function updateLinks (l) {
 
   simulation.force("link")
       .links(l)
-      .strength(.2);
+      .strength(.3);
 
   simulation
-      .alpha(.7)
+      .alpha(.5)
       .restart();
 
   update();

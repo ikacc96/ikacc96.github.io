@@ -30,12 +30,53 @@
     scroll-behavior: smooth;
   }
 
-
   .industry-elem {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .typing {
+    min-height: 8em;
+  }
+
+  .anim-bounce {
+    animation-name: bounceLoop;
+    animation-timing-function: ease;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+    /* transform: translateY(6px); */
+  }
+
+  @keyframes bounceLoop {
+    0% {
+      transform: translateY(0);
+    }
+
+    5% {
+      transform: translateY(0);
+    }
+
+    9% {
+      transform: translateY(-2px);
+    }
+
+    15% {
+      transform: translateY(6px);
+    }
+
+    20% {
+      transform: translateY(-3px);
+    }
+
+    22% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
   /* Small devices (landscape phones, 576px and up) */
@@ -49,11 +90,19 @@
       position: sticky;
       z-index: 1;
     }
+
+    .typing {
+      min-height: 11em;
+    }
   }
 
 
   /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {}
+  @media (min-width: 992px) {
+    .typing {
+      min-height: 7em;
+    }
+  }
 </style>
 
 <body>
@@ -211,7 +260,7 @@
         <!-- Info Sections -->
         <div id="graphic" class="col-md-5">
           <div id="sections">
-            <section class="step space-top-2 space-bottom-3">
+            <section class="step space-top-1 space-top-lg-3 space-bottom-3">
               <div>
                 <h1 class="display-4 mb-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="700">Building
                   the
@@ -224,14 +273,14 @@
                   at scale to dynamic, complex problems and decisionmaking
                   processes.</p>
                 <a class="btn btn-soft-secondary rounded-circle transition-3d-hover mt-4" href="#complexityProblem"><i
-                    class="fas fa-angle-double-down p-1"></i></a>
+                    class="fas fa-angle-double-down p-1 anim-bounce"></i></a>
               </div>
             </section>
-            <section id="complexityProblem" class="step space-top-5 space-bottom-3">
+            <section id="complexityProblem" class="step space-top-4 space-bottom-4">
               <div>
-                <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span>
+                <!-- <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span> -->
                 <h4 class="text-lh-md">We Solve Information Complexity Problems</h4>
-                <p class="text-dark" style="min-height: 11em;">Accrete’s proprietary dynamic learning technologies
+                <p class="typing text-dark">Accrete’s proprietary dynamic learning technologies
                   capture
                   and scale tacit human knowledge to make accurate predictions about <span class="text-primary">
                     <strong class="u-text-animation-v1 u-text-animation-v1--typing"></strong>
@@ -243,7 +292,7 @@
         </div>
         <!-- End Info Sections -->
         <!-- Visualization -->
-        <div id="vis" class="col-md-7 space-1">
+        <div id="vis" class="col-md-7 space-bottom-1">
           <canvas id="mainCanvas"></canvas>
         </div>
         <!-- End Visualization -->
@@ -253,11 +302,11 @@
 
     <!-- Scale Section -->
     <section id="scaleExpertise">
-      <div class="container space-3">
-        <div class="row align-items-center">
+      <div class="container space-2">
+        <div class="row align-items-center justify-content-between">
           <div class="col-md-5">
             <div>
-              <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span>
+              <!-- <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span> -->
               <h4 class="text-lh-md">Scale Your Expertise</h4>
               <p class="text-dark">Our clients are improving their organizations decisionmaking
                 ability and workflow efficiencies. We help
@@ -268,7 +317,7 @@
               <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
             </div>
           </div>
-          <div id="challenge-img" class="col-md-7">
+          <div id="scale-img" class="col-md-6">
             <img class="img-fluid" src="./../../assets/img/custom/tempExpertise.png" alt="static">
           </div>
         </div>
@@ -277,15 +326,42 @@
     <!-- End Scale Section -->
 
     <!-- Approach Section -->
-    <section id="approach" class="">
-      <div class="container space-2 space-lg-3">
-        <!-- Title -->
-        <div class="w-lg-60">
-          <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Accrete's Approach</span>
-          <h4 class="text-lh-md">Our Dynamic Learning Approach</h4>
+    <section id="approach">
+      <div class="container space-2">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+            <div>
+              <!-- <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Complexity Problems</span> -->
+              <h4 class="text-lh-md">Our Dynamic Learning Approach</h4>
+              <p class="text-dark">Using latent mathematical representations of tacit human knowledge we seed
+                self-learning models. Our models dynamically recalibrate neural architectures on the fly with minimal
+                human feedback. The result is <strong class="text-primary">greater accuracy and more valuable predictive
+                  insight.</strong>
+              </p>
+              <a href="#">Learn More<i class="fas fa-angle-right ml-1"></i></a>
+            </div>
+          </div>
+          <div id="approach-img" class="col-md-6">
+            <video autoplay playsinline loop muted width="100%">
+              <source src="./../../assets/media/custom/dynamicLearning.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <!-- End Title -->
-        <div class="row justify-content-between">
+      </div>
+    </section>
+    <!-- End Approach Section -->
+
+
+    <!-- Approach Section -->
+    <!-- <section id="approach" class="">
+      <div class="container space-2 space-lg-3"> -->
+    <!-- Title -->
+    <!-- <div class="w-lg-60"> -->
+    <!-- <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Accrete's Approach</span> -->
+    <!-- <h4 class="text-lh-md">Our Dynamic Learning Approach</h4> -->
+    <!-- </div> -->
+    <!-- End Title -->
+    <!-- <div class="row justify-content-between">
           <div class="col-md-7">
             <p class="text-dark">Using latent mathematical representations of tacit human knowledge we seed
               self-learning models. Our models dynamically recalibrate neural architectures on the fly with minimal
@@ -299,16 +375,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Approach Section -->
 
     <!-- Industries Section -->
     <section id="industries">
-      <div class="container space-1 space-lg-2">
+      <div class="container space-1 space-md-2">
         <!-- Title -->
         <div class="w-lg-60">
           <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Industries we scale</span>
-          <h4 class="text-lh-md"><br></h4>
+          <!-- <h4 class="text-lh-md">Industries we scale</h4> -->
         </div>
         <!-- End Title -->
         <div class="row">
@@ -424,7 +500,7 @@
 
     <!-- Grid Carousel Section -->
     <section id="carousel">
-      <div class="container space-1 space-lg-2">
+      <div class="container space-1 space-md-2">
         <!-- Title -->
         <div class="w-lg-60">
           <span class="d-block text-secondary font-size-1 text-uppercase mb-3">Learn More</span>
