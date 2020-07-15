@@ -10,6 +10,4 @@
 
     - Problems page [`link`](https://ikacc96.github.io/html/custom/problems.html)
 
-        - Problems Use Case page [`link`](https://ikacc96.github.io/html/custom/problemsUseCase.html)
-
     - Industry Use Case page [`link`](https://ikacc96.github.io/html/custom/industryUseCase.html)
