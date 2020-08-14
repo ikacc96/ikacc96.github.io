@@ -4,6 +4,8 @@
 
 - Home page [`link`](https://ikacc96.github.io/html/custom/index.html)
 
+    - Platform page [`link`](https://ikacc96.github.io/html/custom/platform.html)
+
     - Product page [`link`](https://ikacc96.github.io/html/custom/product.html)
 
     - Solutions page [`link`](https://ikacc96.github.io/html/custom/solutions.html)
