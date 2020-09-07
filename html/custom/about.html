@@ -3,7 +3,7 @@
 
 <head>
   <!-- Title -->
-  <title>About | Front - Responsive Website Template</title>
+  <title>Platform | Front - Responsive Website Template</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -35,85 +35,63 @@
     background-color: rgb(14, 12, 29);
   }
 
-  #timeline {
+  #time-main-box {
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 480px;
   }
 
-  #timeline ol {
-    padding: 220px 0;
-  }
-
-  #timeline ol li {
+  #time-list li {
     position: relative;
     display: inline-block;
+    width: 200px;
     list-style-type: none;
-    width: 160px;
     height: 3px;
-    background: white;
+    background-color: white;
   }
 
-  #timeline ol li:first-child {
-    width: 100px;
-  }
-
-  #timeline ol li:not(:first-child) {
-    margin-left: 14px;
-  }
-
-  #timeline ol li::after {
-    content: '';
+  #time-list li:not(last-child)::after {
+    content: "";
+    width: 14px;
+    height: 14px;
     position: absolute;
-    top: 50%;
-    left: calc(100% + 1px);
-    bottom: 0;
-    width: 12px;
-    height: 12px;
-    transform: translateY(-50%);
+    top: -5px;
+    left: -7px;
     border-radius: 50%;
     background: #377dff;
+    z-index: 10;
   }
 
-  #timeline ol li div {
+  .time-item {
     position: absolute;
-    left: calc(100% + 7px);
-    width: 280px;
-    padding: 15px;
-    font-size: 1rem;
     white-space: normal;
-    background: white;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 15px;
+    background-color: white;
+    border-radius: 3px;
   }
 
-  #timeline ol li div::before {
-    content: '';
+  #time-list li:nth-child(odd) .time-item {
+    bottom: 20px;
+  }
+
+  #time-list li:nth-child(even) .time-item {
+    top: 20px;
+  }
+
+  #time-bar {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
+    top: calc(50% - 5px);
+    width: 10%;
+    height: 3px;
+    background-color: #377dff;
+    z-index: 9;
+    transition: width 300ms;
   }
 
-  #timeline ol li:nth-child(odd) div {
-    top: -16px;
-    transform: translateY(-100%);
-  }
-
-  #timeline ol li:nth-child(odd) div::before {
-    top: 100%;
-    border-width: 8px 8px 0 0;
-    border-color: white transparent transparent transparent;
-  }
-
-  #timeline ol li:nth-child(even) div {
-    top: calc(100% + 16px);
-  }
-
-  #timeline ol li:nth-child(even) div::before {
-    top: -8px;
-    border-width: 8px 0 0 8px;
-    border-color: transparent transparent transparent white;
-  }
 
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {}
@@ -363,65 +341,60 @@
     <section id="aboutTimeline" class="bg-light">
       <div class="container space-1 space-md-2">
         <h4 class="text-lh-md" data-aos="fade-up" data-aos-offset="20">Our Journey</h4>
-        <div id="timeline" class="col">
-          <ol data-aos="fade-right">
-            <li>
-              <div>
-                <h6>Jul 2017</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>Jul 2018</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>Jul 2019</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>Jul 2020</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>August 2020</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>September 2020</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-            <li>
-              <div>
-                <h6>Ocotber 2020</h6>
-                It is our mission to solve information
-                complexity problems and scale an
-                organization’s tacit knowledge.
-              </div>
-            </li>
-          </ol>
+        <div id="time-main-box" class="d-flex align-items-center">
+          <div id="list-box" class="my-5 position-relative">
+            <ol id="time-list">
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">July 2017</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">September 2017</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">December 2017</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">February 2018</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">April 2018</p>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">June 2018</p>
+                  <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li>
+                <div class="time-item">
+                  <p class="text-dark font-weight-medium mb-1">July 2018</p>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim
+                    ad minim veniam.</p>
+                </div>
+              </li>
+            </ol>
+            <div id="time-bar">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -632,8 +605,29 @@
 
   <!-- JS Custom -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+  <script>
+    // init controller
+    var controller = new ScrollMagic.Controller({
+      container: "#time-main-box",
+      vertical: false
+    });
+
+    // build scenes
+    new ScrollMagic.Scene({
+      triggerElement: "#list-box",
+      triggerHook: 0.9,
+      duration: document.getElementById('list-box').scrollWidth
+    })
+      // .addIndicators()
+      .addTo(controller)
+      .on("progress", function (e) {
+        let prog = Math.round(e.progress * 100);
+        $("#time-bar").width(`${prog}%`);
+      });
+  </script>
 
   <!-- JS Plugins Init. -->
   <script>
