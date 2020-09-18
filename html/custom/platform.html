@@ -41,6 +41,10 @@
     transition: transform 500ms;
   }
 
+  #platform-img-mid-text {
+    transition: opacity 500ms;
+  }
+
   .industry-content {
     position: absolute;
     top: 0;
@@ -302,15 +306,19 @@
           <div id="platform-hero-img"
             class="col-md-6 col-lg-5 d-none d-md-flex align-items-center flex-column space-top-2">
             <img class="img-fluid" src="./../../assets/img/custom/platformImg-top.png">
-            <div id="platform-img-mid" class="position-relative flex-fill space-2" style="width: 35%;">
+            <div id="platform-img-mid" class="position-relative flex-fill space-2" style="width: 100%;">
               <div id="platform-img-mid-container">
-                <img class="position-absolute w-100" src="./../../assets/img/custom/platformImg-mid-bottom.png">
-                <img id="p-img-3" class="position-absolute w-100"
-                  src="./../../assets/img/custom/platformImg-mid-cyan.png">
-                <img id="p-img-2" class="position-absolute w-100"
-                  src="./../../assets/img/custom/platformImg-mid-blue.png">
-                <img id="p-img-1" class="position-absolute w-100"
-                  src="./../../assets/img/custom/platformImg-mid-lightblue.png">
+                <img id="platform-img-mid-text" class="position-absolute w-100"
+                  src="./../../assets/img/custom/platformImg-mid-text.png">
+                <div class="position-relative mx-auto" style="width: 35%;">
+                  <img class="position-absolute w-100" src="./../../assets/img/custom/platformImg-mid-bottom.png">
+                  <img id="p-img-3" class="position-absolute w-100"
+                    src="./../../assets/img/custom/platformImg-mid-cyan.png">
+                  <img id="p-img-2" class="position-absolute w-100"
+                    src="./../../assets/img/custom/platformImg-mid-blue.png">
+                  <img id="p-img-1" class="position-absolute w-100"
+                    src="./../../assets/img/custom/platformImg-mid-lightblue.png">
+                </div>
               </div>
             </div>
             <img id="platform-img-bottom" class="d-block img-fluid"
@@ -744,6 +752,7 @@
       const img1 = document.getElementById('p-img-1');
       const img2 = document.getElementById('p-img-2');
       const img3 = document.getElementById('p-img-3');
+      const text = document.getElementById('platform-img-mid-text');
 
       const up = -20;
       const x1 = 1.0;
@@ -774,6 +783,11 @@
           img1.style.transform = `translateY(${up * val}px)`;
           img2.style.transform = `translateY(${(up - 40) * val}px)`;
           img3.style.transform = `translateY(${(up - 80) * val}px)`;
+          if (0.2 > prog && prog > -0.2) {
+            text.style.opacity = `1`;
+          } else {
+            text.style.opacity = `0`;
+          }
         });
     }
   </script>
