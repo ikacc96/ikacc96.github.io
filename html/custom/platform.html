@@ -240,7 +240,7 @@
   <main id="content" role="main">
     <!-- Hero Section -->
     <section id="platform-hero">
-      <div class="container space-2">
+      <div class="container space-top-2">
         <div class="row justify-content-between">
           <div id="platform-hero-text" class="col-md-6">
             <div class="platform-screen d-flex flex-column justify-content-md-center">
@@ -303,15 +303,15 @@
                 src="./../../assets/img/custom/PlatformImg03.jpg">
             </div>
           </div>
-          <div id="platform-hero-img"
-            class="col-md-6 col-lg-5 d-none d-md-flex align-items-center flex-column space-top-2">
+          <div id="platform-hero-img" class="col-md-6 col-lg-5 d-none d-md-flex align-items-center flex-column space-3">
             <img class="img-fluid" src="./../../assets/img/custom/platformImg-top.png">
-            <div id="platform-img-mid" class="position-relative flex-fill space-2" style="width: 100%;">
+            <div id="platform-img-mid" class="position-relative flex-fill space-lg-2" style="width: 100%;">
               <div id="platform-img-mid-container">
                 <img id="platform-img-mid-text" class="position-absolute w-100"
                   src="./../../assets/img/custom/platformImg-mid-text.png">
                 <div class="position-relative mx-auto" style="width: 35%;">
-                  <img class="position-absolute w-100" src="./../../assets/img/custom/platformImg-mid-bottom.png">
+                  <img id="p-img-0" class="position-absolute w-100"
+                    src="./../../assets/img/custom/platformImg-mid-bottom.png">
                   <img id="p-img-3" class="position-absolute w-100"
                     src="./../../assets/img/custom/platformImg-mid-cyan.png">
                   <img id="p-img-2" class="position-absolute w-100"
@@ -747,49 +747,93 @@
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
 
   <script>
-    if (document.documentElement.clientWidth > 768) {
+    const img0 = document.getElementById('p-img-0');
+    const img1 = document.getElementById('p-img-1');
+    const img2 = document.getElementById('p-img-2');
+    const img3 = document.getElementById('p-img-3');
+    const text = document.getElementById('platform-img-mid-text');
 
-      const img1 = document.getElementById('p-img-1');
-      const img2 = document.getElementById('p-img-2');
-      const img3 = document.getElementById('p-img-3');
-      const text = document.getElementById('platform-img-mid-text');
+    let up, smOff;
+    const x1 = 1.0;
+    const y1 = -1.0;
+    const mid = (x1 + y1) / 2
 
-      const up = -20;
-      const x1 = 1.0;
-      const y1 = -1.0;
+    //Set up
+    const setWidth = document.documentElement.clientWidth;
 
-      function remap(value) {
-        return ((value - 0) * (y1 - x1) / (1 - 0) + x1).toFixed(3);
+    if (768 < setWidth && setWidth < 992) {
+      up = 20;
+      smOff = 50;
+    } else if (992 < setWidth) {
+      up = 30;
+      smOff = 100;
+    }
+
+    img0.style.transform = `translateY(${(up * 2)}px)`;
+    img1.style.transform = `translateY(${(up * 1)}px)`;
+    img2.style.transform = `translateY(${(up * 0)}px)`;
+    img3.style.transform = `translateY(${(up * -1)}px)`;
+
+    function remap(value) {
+      return ((value - 0) * (y1 - x1) / (1 - 0) + x1).toFixed(3);
+    }
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scenes
+    var scene = new ScrollMagic.Scene({
+      triggerElement: "#platform-img-mid",
+    })
+      .duration($("#platform-img-mid").height() - $("#p-img-0").height())
+      .setPin("#platform-img-mid-container")
+      .offset(`${smOff}`)
+      .addTo(controller);
+
+    function platRun(w, set) {
+
+      if (768 < w && w < 992) {
+        up = 20;
+        smOff = 50;
+      } else if (992 < w) {
+        up = 30;
+        smOff = 100;
       }
 
-      img1.style.transform = `translateY(${(up)}px)`;
-      img2.style.transform = `translateY(${(up - 40)}px)`;
-      img3.style.transform = `translateY(${(up - 80)}px)`;
-
-      // init controller
-      var controller = new ScrollMagic.Controller();
-
-      // build scenes
-      new ScrollMagic.Scene({
-        triggerElement: "#platform-img-mid",
-        duration: $("#platform-img-mid").height() - ($("#platform-img-bottom").height()),
-      })
-        .setPin("#platform-img-mid-container")
-        // .addIndicators()
-        .addTo(controller)
-        .on("progress", function (e) {
-          let prog = remap(e.progress.toFixed(3));
-          let val = (prog > 0) ? prog : 0;
-          img1.style.transform = `translateY(${up * val}px)`;
-          img2.style.transform = `translateY(${(up - 40) * val}px)`;
-          img3.style.transform = `translateY(${(up - 80) * val}px)`;
-          if (0.2 > prog && prog > -0.2) {
-            text.style.opacity = `1`;
-          } else {
-            text.style.opacity = `0`;
-          }
-        });
+      if (!set) {
+        scene
+          // .addIndicators()
+          .on("progress", function (e) {
+            let prog = remap(e.progress.toFixed(3));
+            let val = (prog > 0.1) ? prog : 0;
+            img0.style.transform = `translateY(${(up * 2) * val}px)`;
+            img1.style.transform = `translateY(${(up * 1) * val}px)`;
+            img2.style.transform = `translateY(${(up * 0) * val}px)`;
+            img3.style.transform = `translateY(${(up * -1) * val}px)`;
+            if ((mid + 0.2) > prog && prog > (mid - 0.2)) {
+              text.style.opacity = `1`;
+            } else {
+              text.style.opacity = `0`;
+            }
+          });
+        set = true;
+      } else {
+        scene
+          .duration($("#platform-img-mid").height() - $("#p-img-0").height())
+          .setPin("#platform-img-mid-container")
+          .offset(`${smOff}`)
+          .refresh()
+      }
     }
+
+    platRun(document.documentElement.clientWidth, false);
+
+    function rerun() {
+      let w = document.documentElement.clientWidth;
+      platRun(w, true)
+    }
+
+    window.addEventListener('resize', rerun);
   </script>
 
   <!-- JS Plugins Init. -->
