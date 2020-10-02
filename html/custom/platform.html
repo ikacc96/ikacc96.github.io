@@ -35,16 +35,6 @@
     background-color: rgb(14, 12, 29);
   }
 
-  #p-img-1,
-  #p-img-2,
-  #p-img-3 {
-    transition: transform 500ms;
-  }
-
-  #platform-img-mid-text {
-    transition: opacity 500ms;
-  }
-
   .industry-content {
     position: absolute;
     top: 0;
@@ -57,6 +47,17 @@
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
+
+    #p-img-0,
+    #p-img-1,
+    #p-img-2,
+    #p-img-3 {
+      transition: transform 250ms;
+    }
+
+    #platform-img-mid-text {
+      transition: opacity 500ms;
+    }
 
     .platform-screen {
       min-height: 80vh;
@@ -254,7 +255,7 @@
                 <p data-aos="fade-down" data-aos-offset="20">Accrete has built a
                   dynamic AI platform
                   comprised of
-                  proprietary learning technologies called ‘Knowledge Functions’designed to boost analytical
+                  proprietary learning technologies called ‘Knowledge Functions’ designed to boost analytical
                   productivity
                   by scaling human expertise and automating analytical tasks.</p>
               </div>
@@ -747,93 +748,96 @@
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
 
   <script>
-    const img0 = document.getElementById('p-img-0');
-    const img1 = document.getElementById('p-img-1');
-    const img2 = document.getElementById('p-img-2');
-    const img3 = document.getElementById('p-img-3');
-    const text = document.getElementById('platform-img-mid-text');
+    $(document).on('ready', function () {
 
-    let up, smOff;
-    const x1 = 1.0;
-    const y1 = -1.0;
-    const mid = (x1 + y1) / 2
+      const img0 = document.getElementById('p-img-0');
+      const img1 = document.getElementById('p-img-1');
+      const img2 = document.getElementById('p-img-2');
+      const img3 = document.getElementById('p-img-3');
+      const text = document.getElementById('platform-img-mid-text');
 
-    //Set up
-    const setWidth = document.documentElement.clientWidth;
+      let up, smOff;
+      const x1 = 1.0;
+      const y1 = -1.0;
+      const mid = (x1 + y1) / 2
 
-    if (768 < setWidth && setWidth < 992) {
-      up = 20;
-      smOff = 50;
-    } else if (992 < setWidth) {
-      up = 30;
-      smOff = 100;
-    }
+      //Set up
+      const setWidth = document.documentElement.clientWidth;
 
-    img0.style.transform = `translateY(${(up * 2)}px)`;
-    img1.style.transform = `translateY(${(up * 1)}px)`;
-    img2.style.transform = `translateY(${(up * 0)}px)`;
-    img3.style.transform = `translateY(${(up * -1)}px)`;
-
-    function remap(value) {
-      return ((value - 0) * (y1 - x1) / (1 - 0) + x1).toFixed(3);
-    }
-
-    // init controller
-    var controller = new ScrollMagic.Controller();
-
-    // build scenes
-    var scene = new ScrollMagic.Scene({
-      triggerElement: "#platform-img-mid",
-    })
-      .duration($("#platform-img-mid").height() - $("#p-img-0").height())
-      .setPin("#platform-img-mid-container")
-      .offset(`${smOff}`)
-      .addTo(controller);
-
-    function platRun(w, set) {
-
-      if (768 < w && w < 992) {
+      if (768 < setWidth && setWidth < 992) {
         up = 20;
         smOff = 50;
-      } else if (992 < w) {
+      } else if (992 < setWidth) {
         up = 30;
         smOff = 100;
       }
 
-      if (!set) {
-        scene
-          // .addIndicators()
-          .on("progress", function (e) {
-            let prog = remap(e.progress.toFixed(3));
-            let val = (prog > 0.1) ? prog : 0;
-            img0.style.transform = `translateY(${(up * 2) * val}px)`;
-            img1.style.transform = `translateY(${(up * 1) * val}px)`;
-            img2.style.transform = `translateY(${(up * 0) * val}px)`;
-            img3.style.transform = `translateY(${(up * -1) * val}px)`;
-            if ((mid + 0.2) > prog && prog > (mid - 0.2)) {
-              text.style.opacity = `1`;
-            } else {
-              text.style.opacity = `0`;
-            }
-          });
-        set = true;
-      } else {
-        scene
-          .duration($("#platform-img-mid").height() - $("#p-img-0").height())
-          .setPin("#platform-img-mid-container")
-          .offset(`${smOff}`)
-          .refresh()
+      img0.style.transform = `translateY(${(up * 2)}px)`;
+      img1.style.transform = `translateY(${(up * 1)}px)`;
+      img2.style.transform = `translateY(${(up * 0)}px)`;
+      img3.style.transform = `translateY(${(up * -1)}px)`;
+
+      function remap(value) {
+        return ((value - 0) * (y1 - x1) / (1 - 0) + x1).toFixed(3);
       }
-    }
 
-    platRun(document.documentElement.clientWidth, false);
+      // init controller
+      var controller = new ScrollMagic.Controller();
 
-    function rerun() {
-      let w = document.documentElement.clientWidth;
-      platRun(w, true)
-    }
+      // build scenes
+      var scene = new ScrollMagic.Scene({
+        triggerElement: "#platform-img-mid",
+      })
+        .duration($("#platform-img-mid").height() - $("#p-img-0").height())
+        .setPin("#platform-img-mid-container")
+        .offset(`${smOff}`)
+        .addTo(controller);
 
-    window.addEventListener('resize', rerun);
+      function platRun(w, set) {
+
+        if (768 < w && w < 992) {
+          up = 20;
+          smOff = 50;
+        } else if (992 < w) {
+          up = 30;
+          smOff = 100;
+        }
+
+        if (!set) {
+          scene
+            // .addIndicators()
+            .on("progress", function (e) {
+              let prog = remap(e.progress.toFixed(3));
+              let val = (prog > 0.1) ? prog : 0;
+              img0.style.transform = `translateY(${(up * 2) * val}px)`;
+              img1.style.transform = `translateY(${(up * 1) * val}px)`;
+              img2.style.transform = `translateY(${(up * 0) * val}px)`;
+              img3.style.transform = `translateY(${(up * -1) * val}px)`;
+              if ((mid + 0.2) > prog && prog > (mid - 0.2)) {
+                text.style.opacity = `1`;
+              } else {
+                text.style.opacity = `0`;
+              }
+            });
+          set = true;
+        } else {
+          scene
+            .duration($("#platform-img-mid").height() - $("#p-img-0").height())
+            .setPin("#platform-img-mid-container")
+            .offset(`${smOff}`)
+            .refresh()
+        }
+      }
+
+      platRun(document.documentElement.clientWidth, false);
+
+      function rerun() {
+        let w = document.documentElement.clientWidth;
+        platRun(w, true)
+      }
+
+      window.addEventListener('resize', rerun);
+    });
   </script>
 
   <!-- JS Plugins Init. -->
