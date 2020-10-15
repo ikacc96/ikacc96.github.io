@@ -4,14 +4,10 @@
 
 - Home page [`link`](https://ikacc96.github.io/html/custom/index.html)
 
+    - Career page [`link`](https://ikacc96.github.io/html/custom/career.html)
+
     - About page [`link`](https://ikacc96.github.io/html/custom/about.html)
 
     - Platform page [`link`](https://ikacc96.github.io/html/custom/platform.html)
-
-    - Product page [`link`](https://ikacc96.github.io/html/custom/product.html)
-
-    - Solutions page [`link`](https://ikacc96.github.io/html/custom/solutions.html)
-
-    - Problems page [`link`](https://ikacc96.github.io/html/custom/problems.html)
 
     - Industry Use Case page [`link`](https://ikacc96.github.io/html/custom/industryUseCase.html)
