@@ -12,4 +12,4 @@
 
     - Industry Use Case page [`link`](https://ikacc96.github.io/html/custom/industryUseCase.html)
 
-- Rumor Hound [`link`](https://ikacc96.github.io/html/rh/pages/index.html)
+- Rumor Hound [`link`](https://ikacc96.github.io/rh/pages/index.html)
